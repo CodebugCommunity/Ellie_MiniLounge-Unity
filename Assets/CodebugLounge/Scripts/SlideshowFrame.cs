@@ -1,5 +1,5 @@
-﻿﻿using TMPro;
- using UdonSharp;
+﻿using TMPro;
+using UdonSharp;
 using UnityEngine;
 using UnityEngine.UI;
 using VRC.SDK3.Image;

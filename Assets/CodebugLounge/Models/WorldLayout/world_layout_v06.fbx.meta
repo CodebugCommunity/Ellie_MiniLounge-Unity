@@ -1,0 +1,259 @@
+fileFormatVersion: 2
+guid: b5d7402106f5b4843a3dd8de7b459d2e
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 24a2721c69b572b4dbddb079a80e7632, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: f020b559c9acfd7438a1b4f2918aa7de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 5afe19bd796f33c4b80b99f6ef54ab18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: brown_mud_02
+    second: {fileID: 2100000, guid: fa8dce5046a738c4eb94319f6113bce1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark_wood
+    second: {fileID: 2100000, guid: 9188ae15df3125447b01cdf0126c6ff9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark_wooden_planks
+    second: {fileID: 2100000, guid: 6fe719a6a03a07041baaf996f5d24d20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fern_02.002
+    second: {fileID: 2100000, guid: 1105f067cd9e8dc469368bea347a3532, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: 95a0c868bed168544848b1094dbaf6cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grass_medium_01
+    second: {fileID: 2100000, guid: f76a791ccd5b9ae4ea8538c78c85052d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_02_leaves
+    second: {fileID: 2100000, guid: d4a932a8286769c48a02b2cd15209b85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_02_pot
+    second: {fileID: 2100000, guid: c1dd735d8876a71489383be9b131688a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_04
+    second: {fileID: 2100000, guid: a664730e7769ba346af28f23a257da14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shrub_01
+    second: {fileID: 2100000, guid: 0c8b5b378437cec4e9b52be64d9b3de8, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: brown_mud_02_diff_1k
+    second: {fileID: 2800000, guid: 9744043a27fd3bc4f8b64003f34acbec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: brown_mud_02_nor_gl_1k
+    second: {fileID: 2800000, guid: fa92c67cf345dd84fb7ebf007a46ed77, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: brown_mud_02_rough_1k
+    second: {fileID: 2800000, guid: 76dd6b07848499446af8660310dece85, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: codebug_beanbag_Rough_p
+    second: {fileID: 2800000, guid: c1338e8499ac7334ebcc62ad805b5564, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: codebug_beanbag_diff_p
+    second: {fileID: 2800000, guid: 3dd7f49c6e84e384da766a15a03f05ff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark_wood_diff_1k
+    second: {fileID: 2800000, guid: 8af76430993148342b5f124c270d5ce1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark_wood_nor_gl_1k
+    second: {fileID: 2800000, guid: e9b581bc582a10e49a2950e53f4a95a3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark_wood_rough_1k
+    second: {fileID: 2800000, guid: 2cb667f9d2aa8804e8ed1805168ca94b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark_wooden_planks_diff_1k
+    second: {fileID: 2800000, guid: d59d43e19fc08d340816c7319fb5cb39, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark_wooden_planks_nor_gl_1k
+    second: {fileID: 2800000, guid: 429670a7055745945b7801466e1b4a18, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark_wooden_planks_rough_1k
+    second: {fileID: 2800000, guid: 3f4da6f9cb8e17049a75045c2f729f77, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_02_pot_diff_1k
+    second: {fileID: 2800000, guid: 2b152d430c42b3e44b514e1243e07709, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_02_pot_nor_gl_1k
+    second: {fileID: 2800000, guid: fa87590ad33544648937db65c2135c61, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_02_pot_rough_1k
+    second: {fileID: 2800000, guid: d4beb56ce643dc04eaf8d9affa3cbc88, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_04_diff_1k
+    second: {fileID: 2800000, guid: c66dc22f792be0a40aa62f0aa3c6b691, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_04_nor_gl_1k
+    second: {fileID: 2800000, guid: 0705987274c815a42b49222909642ae5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_04_rough_1k
+    second: {fileID: 2800000, guid: c41c40d26931fc64e9ea785c27accbb4, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
