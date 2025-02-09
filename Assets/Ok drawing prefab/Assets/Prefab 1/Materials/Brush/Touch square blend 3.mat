@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Touch square blend 3
+  m_Shader: {fileID: 4800000, guid: 48e1ea70d3c43ba4b95e4fcfc7c88a94, type: 3}
+  m_ShaderKeywords: _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Blend1:
+        m_Texture: {fileID: 2800000, guid: dfebeaca44a42e34b80233e739d58edc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Blend2:
+        m_Texture: {fileID: 2800000, guid: b16aa49d8b7db624fa50f8220f37cdb2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Blend3:
+        m_Texture: {fileID: 2800000, guid: 168bc4a545ee1804ebdb2d2e081e2dfb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Blend4:
+        m_Texture: {fileID: 2800000, guid: 721d25dce5eead845ae3f62f7954f323, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Blend5:
+        m_Texture: {fileID: 2800000, guid: 6e762f73f809f9049b1f7f5aadf1ea9a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Blend6:
+        m_Texture: {fileID: 2800000, guid: 5c417c37a8d260d41aa32570735c695d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FalloffTex:
+        m_Texture: {fileID: 2800000, guid: af64b32efc952684a922c9906df895a7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FalloffTex1:
+        m_Texture: {fileID: 2800000, guid: 653bb436e4f9e954da712d575966cc8b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FalloffTex2:
+        m_Texture: {fileID: 2800000, guid: eb79506990918e54c8ffa2f187a41e41, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FalloffTex3:
+        m_Texture: {fileID: 2800000, guid: a047f975f789b114dafa38774f57159e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FalloffTex4:
+        m_Texture: {fileID: 2800000, guid: 88fbc1f3d3eb6e546ad7f4f97bad79db, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RT:
+        m_Texture: {fileID: 8400000, guid: ab8646ef6dc19ab4daf5bd683dee8c0c, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Alpha: 0.21600002
+    - _Pointy: 0
+    - _SampleCenter: 0
+    - _Softness: 1.5
+    m_Colors: []

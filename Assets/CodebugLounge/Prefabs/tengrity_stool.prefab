@@ -192,7 +192,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5817207592199639897}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -5.51, y: 0.4600003, z: 4.54}
   m_LocalScale: {x: 62.796402, y: 62.796402, z: 62.796402}
   m_ConstrainProportionsScale: 0
@@ -201,7 +201,7 @@ Transform:
   - {fileID: 6706345037306150873}
   - {fileID: 4000300338605660227}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &4943426074083645699
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -279,7 +279,7 @@ PrefabInstance:
     - target: {fileID: 1350032267753345932, guid: 1dacfe29d81b51c46a85f97842455123,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.00252
+      value: 0.00422
       objectReference: {fileID: 0}
     - target: {fileID: 1350032267753345932, guid: 1dacfe29d81b51c46a85f97842455123,
         type: 3}
@@ -330,6 +330,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VRCChair3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350032268266334921, guid: 1dacfe29d81b51c46a85f97842455123,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.761
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350032268266334921, guid: 1dacfe29d81b51c46a85f97842455123,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.255
       objectReference: {fileID: 0}
     - target: {fileID: 7326923351199246366, guid: 1dacfe29d81b51c46a85f97842455123,
         type: 3}
