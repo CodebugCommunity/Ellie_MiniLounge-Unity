@@ -1,3 +1,12 @@
+// Upgrade NOTE: commented out 'sampler2D unity_Lightmap', a built-in variable
+
+// Upgrade NOTE: replaced tex2D unity_Lightmap with UNITY_SAMPLE_TEX2D
+
+// Upgrade NOTE: replaced tex2D unity_Lightmap with UNITY_SAMPLE_TEX2D
+
+// Upgrade NOTE: commented out 'float4 unity_LightmapST', a built-in variable
+// Upgrade NOTE: commented out 'sampler2D unity_Lightmap', a built-in variable
+
 // Original shader concept develped by Sorumi (https://github.com/Sorumi/UnityFurShader)
 
 #pragma target 3.0
@@ -17,6 +26,7 @@ struct v2f
     half4 uv: TEXCOORD0;
     float3 worldNormal: TEXCOORD1;
     float3 worldPos: TEXCOORD2;
+	float2 lightmapUV : TEXCOORD3;
 };
 
 fixed4 _Color;
@@ -39,6 +49,9 @@ fixed _FurShading;
 fixed _AudioLinkInfluence;
 fixed _AudioLinkFurInfluence;
 
+// sampler2D unity_Lightmap;
+//float4 unity_Lightmap_ST;
+
 
 v2f vert (appdata v)
 {
@@ -47,6 +60,8 @@ v2f vert (appdata v)
     o.uv = v.uv;
     return o;
 }
+
+
 
 
 fixed alt(fixed n, fixed3 hsv)
@@ -82,71 +97,73 @@ fixed3 conv(fixed3 clr)
 	return fixed3(alt(5,hsv),alt(3,hsv),alt(1,hsv));
 }
 
-v2f vert_surface(appdata_base v)
+v2f vert_surface(appdata_full v)
 {
-    v2f o;
-    o.pos = UnityObjectToClipPos(v.vertex);
-    o.uv.xy = TRANSFORM_TEX(v.texcoord, _MainTex);
-    o.worldNormal = UnityObjectToWorldNormal(v.normal);
-    o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
-
-    return o;
+	v2f o;
+	o.pos = UnityObjectToClipPos(v.vertex);
+	o.uv.xy = TRANSFORM_TEX(v.texcoord, _MainTex);
+	o.lightmapUV = v.texcoord1.xy * unity_LightmapST.xy + unity_LightmapST.zw;
+	o.worldNormal = UnityObjectToWorldNormal(v.normal);
+	o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
+	return o;
 }
 
-v2f vert_base(appdata_base v)
-{
-    v2f o;
-    float3 P = v.vertex.xyz + v.normal * _FurLength * FURSTEP;
-    o.pos = UnityObjectToClipPos(float4(P, 1.0));
-    o.uv.xy = TRANSFORM_TEX(v.texcoord, _MainTex );
-    o.uv.zw = TRANSFORM_TEX(v.texcoord, _FurTex );
-    o.worldNormal = UnityObjectToWorldNormal(v.normal);
-    o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
 
-    return o;
+
+v2f vert_base(appdata_full v)
+{
+	v2f o;
+	float3 P = v.vertex.xyz + v.normal * _FurLength * FURSTEP;
+	o.pos = UnityObjectToClipPos(float4(P, 1.0));
+	o.uv.xy = TRANSFORM_TEX(v.texcoord, _MainTex);
+	o.uv.zw = TRANSFORM_TEX(v.texcoord, _FurTex);
+	o.lightmapUV = v.texcoord1.xy * unity_LightmapST.xy + unity_LightmapST.zw;
+	o.worldNormal = UnityObjectToWorldNormal(v.normal);
+	o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
+	return o;
 }
 
-fixed4 frag_surface(v2f i): SV_Target
+
+fixed4 frag_surface(v2f i) : SV_Target
 {
-    fixed3 worldNormal = normalize(i.worldNormal);
-    fixed3 worldLight = normalize(_WorldSpaceLightPos0.xyz);
-    fixed3 worldView = normalize(_WorldSpaceCameraPos.xyz - i.worldPos.xyz);
-    fixed3 worldHalf = normalize(worldView + worldLight);
+	fixed3 worldNormal = normalize(i.worldNormal);
+	fixed3 worldLight = normalize(_WorldSpaceLightPos0.xyz);
+	fixed3 worldView = normalize(_WorldSpaceCameraPos.xyz - i.worldPos.xyz);
+	fixed3 worldHalf = normalize(worldView + worldLight);
 
-    fixed3 albedo = conv(tex2D(_MainTex, i.uv.xy).rgb) * _Color;
-
-    fixed3 ambient = albedo * _Emission + albedo * (1 - _Emission);
-
-    fixed3 diffuse = albedo * saturate(dot(worldNormal, worldLight));
-
-    fixed3 color = ambient + diffuse;
+	fixed3 albedo = conv(tex2D(_MainTex, i.uv.xy).rgb) * _Color;
+	fixed3 ambient = albedo * _Emission + albedo * (1 - _Emission);
+	fixed3 diffuse = albedo * saturate(dot(worldNormal, worldLight));
+	fixed3 color = ambient + diffuse;
     
-    return fixed4(color, 1.0);
+	// Sample baked light and modulate the final color.
+	fixed3 bakedLight = UNITY_SAMPLE_TEX2D(unity_Lightmap, i.lightmapUV).rgb;
+	color *= bakedLight;
+    
+	return fixed4(color, 1.0);
 }
 
-fixed4 frag_base(v2f i): SV_Target
+
+fixed4 frag_base(v2f i) : SV_Target
 {
-    fixed3 worldNormal = normalize(i.worldNormal);
-    fixed3 worldLight = normalize(_WorldSpaceLightPos0.xyz);
-    fixed3 worldView = normalize(_WorldSpaceCameraPos.xyz - i.worldPos.xyz);
-    fixed3 worldHalf = normalize(worldView + worldLight);
-	
-    fixed3 albedo = conv(tex2D(_MainTex, i.uv.xy).rgb) * _Color;
-
-    albedo -= (pow(1 - FURSTEP, 3)) * _FurShading;
-
-
-    fixed3 ambient = albedo * _Emission + albedo * (1 - _Emission);
+	fixed3 worldNormal = normalize(i.worldNormal);
+	fixed3 worldLight = normalize(_WorldSpaceLightPos0.xyz);
+	fixed3 worldView = normalize(_WorldSpaceCameraPos.xyz - i.worldPos.xyz);
+	fixed3 worldHalf = normalize(worldView + worldLight);
     
-    fixed3 diffuse = albedo * saturate(dot(worldNormal, worldLight));
-
-    fixed3 color = ambient + diffuse;
+	fixed3 albedo = conv(tex2D(_MainTex, i.uv.xy).rgb) * _Color;
+	albedo -= (pow(1 - FURSTEP, 3)) * _FurShading;
     
-    fixed3 noise = tex2D(_FurTex, i.uv.zw * _FurThinness).rgb;
+	fixed3 ambient = albedo * _Emission + albedo * (1 - _Emission);
+	fixed3 diffuse = albedo * saturate(dot(worldNormal, worldLight));
+	fixed3 color = ambient + diffuse;
     
-    fixed alpha = clamp(noise - (FURSTEP * FURSTEP) * _FurDensity, 0, 1);
-
-
+	fixed3 noise = tex2D(_FurTex, i.uv.zw * _FurThinness).rgb;
+	fixed alpha = clamp(noise - (FURSTEP * FURSTEP) * _FurDensity, 0, 1);
     
-    return fixed4(color, alpha);
+	// Sample baked light and modulate the final color.
+	fixed3 bakedLight = UNITY_SAMPLE_TEX2D(unity_Lightmap, i.lightmapUV).rgb;
+	color *= bakedLight;
+    
+	return fixed4(color, alpha);
 }

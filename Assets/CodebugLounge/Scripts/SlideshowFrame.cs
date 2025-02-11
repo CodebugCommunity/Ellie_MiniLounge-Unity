@@ -31,6 +31,8 @@ public class SlideshowFrame : UdonSharpBehaviour
     private string[] _captions = new string[0];
     private Texture2D[] _downloadedTextures;
     
+    
+    
     private void Start()
     {
         // Downloaded textures will be cached in a texture array.
@@ -59,6 +61,7 @@ public class SlideshowFrame : UdonSharpBehaviour
     {
         // All clients share the same server time. That's used to sync the currently displayed image.
         _loadedIndex = (int)(Networking.GetServerTimeInMilliseconds() / 1000f / slideDurationSeconds) % imageUrls.Length;
+        _loadedIndex = Random.Range(0, imageUrls.Length);
 
         var nextTexture = _downloadedTextures[_loadedIndex];
         
@@ -66,12 +69,19 @@ public class SlideshowFrame : UdonSharpBehaviour
         {
             // Image already downloaded! No need to download it again.
             renderer.sharedMaterial.mainTexture = nextTexture;
+            CorrectImageSize(nextTexture);
+            
+           
+            //renderer.transform.localScale = new Vector3(1, aspectRatio, 1);
+            Debug.Log("Image dimensionsEXISTING: " + nextTexture.width + "x" + nextTexture.height);
             UpdateCaptionText();
         }
         else
         {
             var rgbInfo = new TextureInfo();
             rgbInfo.GenerateMipMaps = true;
+            rgbInfo.WrapModeV = TextureWrapMode.Clamp;
+            rgbInfo.WrapModeU = TextureWrapMode.Clamp;
             _imageDownloader.DownloadImage(imageUrls[_loadedIndex], renderer.material, _udonEventReceiver, rgbInfo);
         }
         
@@ -106,7 +116,28 @@ public class SlideshowFrame : UdonSharpBehaviour
         Debug.Log($"Image loaded: {result.SizeInMemoryBytes} bytes.");
         
         _downloadedTextures[_loadedIndex] = result.Result;
+        
+        CorrectImageSize(result.Result);
+        
         UpdateCaptionText();
+    }
+    
+    void CorrectImageSize(Texture2D texture)
+    {
+        float aspectRatio = (float)texture.width / texture.height;
+        if (aspectRatio > 1)
+        {
+            renderer.sharedMaterial.mainTextureScale = new Vector2(1, 1*aspectRatio);
+            renderer.sharedMaterial.mainTextureOffset = new Vector2(0, (1 - aspectRatio) / 2);
+
+        }
+        else
+        {
+            renderer.sharedMaterial.mainTextureScale = new Vector2(1/aspectRatio, 1);
+            renderer.sharedMaterial.mainTextureOffset = new Vector2((1 - 1 / aspectRatio) / 2, 0);
+
+            
+        }
     }
 
     public override void OnImageLoadError(IVRCImageDownload result)

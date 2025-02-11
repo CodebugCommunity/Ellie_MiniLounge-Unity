@@ -5,20 +5,30 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 57fee82a5991fa84ba0f219d04637820, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: coast_sand_rocks_02
+    second: {fileID: 2100000, guid: 99c853496d90030489b66e10b7ebdf53, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: buildings_bg_rough_p
-    second: {fileID: 2800000, guid: 1f916e07918141749b2aed0125077e8b, type: 3}
+    second: {fileID: 2800000, guid: aed0e489806ac314380101e1f2b72194, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: terrain_background_p
-    second: {fileID: 2800000, guid: c64f5eec09cc2c840af525620b39fa83, type: 3}
+    second: {fileID: 2800000, guid: eae9e8ed7eebace4f8940b34ff482d08, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: terrain_background_rough_P
-    second: {fileID: 2800000, guid: 62b8bedcf36a49242bad88f60fc945d8, type: 3}
+    second: {fileID: 2800000, guid: 1bd7ca3936c543649b8ed24c526e5609, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
