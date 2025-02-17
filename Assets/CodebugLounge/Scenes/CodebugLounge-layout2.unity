@@ -31145,7 +31145,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2052424924
@@ -31206,13 +31206,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052424922}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.06526354, y: -0.8586164, z: 0.49572232, w: 0.11303976}
-  m_LocalPosition: {x: 3.602, y: -0.203, z: 15.474}
+  m_LocalRotation: {x: 0.15360181, y: -0.6902221, z: 0.6902221, w: 0.15360181}
+  m_LocalPosition: {x: 5.132, y: -0.085, z: 15.732}
   m_LocalScale: {x: 0.08128624, y: 0.19040525, z: 0.19040525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 120, y: 15, z: 180}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 154.908}
 --- !u!114 &2052424927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33930,6 +33930,7 @@ GameObject:
   - component: {fileID: 2384483782475492645}
   - component: {fileID: 4169339197802610093}
   - component: {fileID: 383497902327123868}
+  - component: {fileID: 4169339197802610094}
   m_Layer: 0
   m_Name: beanbag.009
   m_TagString: Untagged
@@ -37683,6 +37684,7 @@ GameObject:
   - component: {fileID: 702065210727648635}
   - component: {fileID: 774808895309652218}
   - component: {fileID: 7979932686529571389}
+  - component: {fileID: 7979932686529571390}
   m_Layer: 0
   m_Name: beanbag.010
   m_TagString: Untagged
@@ -49490,6 +49492,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292756472672444921}
+  m_Mesh: {fileID: 2963852679157496395, guid: b5d7402106f5b4843a3dd8de7b459d2e, type: 3}
+--- !u!64 &4169339197802610094
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292756472672444921}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: 2963852679157496395, guid: b5d7402106f5b4843a3dd8de7b459d2e, type: 3}
 --- !u!23 &4175464588294585265
 MeshRenderer:
@@ -66743,6 +66767,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7979932686529571390
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205407090476204624}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2963852679157496395, guid: b5d7402106f5b4843a3dd8de7b459d2e, type: 3}
 --- !u!4 &7985898981832007976
 Transform:
   m_ObjectHideFlags: 0
@@ -67119,6 +67165,7 @@ GameObject:
   - component: {fileID: 9165949297635714367}
   - component: {fileID: 7051885935191864620}
   - component: {fileID: 6449153959313986204}
+  - component: {fileID: 9165949297635714368}
   m_Layer: 0
   m_Name: beanbag.008
   m_TagString: Untagged
@@ -71360,6 +71407,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &9165949297635714368
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8085361076376529727}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2963852679157496395, guid: b5d7402106f5b4843a3dd8de7b459d2e, type: 3}
 --- !u!33 &9172600844079400763
 MeshFilter:
   m_ObjectHideFlags: 0
