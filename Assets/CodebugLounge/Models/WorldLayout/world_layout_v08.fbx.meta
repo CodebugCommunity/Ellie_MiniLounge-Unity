@@ -73,17 +73,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: dark_wood
-    second: {fileID: 2100000, guid: eb6265ee8c482ba44b965ffb5b036d0d, type: 2}
+    second: {fileID: 2100000, guid: 9188ae15df3125447b01cdf0126c6ff9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: dark_wood.001
-    second: {fileID: 2100000, guid: 4e7efea4d1ba7944799df652be4406b6, type: 2}
+    second: {fileID: 2100000, guid: 9188ae15df3125447b01cdf0126c6ff9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: dark_wood.002
-    second: {fileID: 2100000, guid: 1c8a942d1e5eea04eb032489b11b8a6e, type: 2}
+    second: {fileID: 2100000, guid: 9188ae15df3125447b01cdf0126c6ff9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -142,21 +142,6 @@ ModelImporter:
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: brown_mud_02_diff_1k
-    second: {fileID: 2800000, guid: 2b8c5e261e2335c41bbb5acff4a36c18, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: brown_mud_02_nor_gl_1k
-    second: {fileID: 2800000, guid: de2918cd2aab9c045ae81331a8068974, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: brown_mud_02_rough_1k
-    second: {fileID: 2800000, guid: 527d5d16cd6a9a549aabaccbe9f428b3, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
       name: brushed_concrete_diff_1k
     second: {fileID: 2800000, guid: 74be69dca5e053c4482895620af6532a, type: 3}
   - first:
@@ -192,68 +177,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: dark_wood_diff_1k
-    second: {fileID: 2800000, guid: b9b191dded5c8f247a468e2551cabc10, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: dark_wood_nor_gl_1k
-    second: {fileID: 2800000, guid: 8369a39dc7d9a0c4da0cf6cbec5241b2, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: dark_wood_rough_1k
-    second: {fileID: 2800000, guid: a546efb316293a543b5b9d3036cd6da8, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: dark_wooden_planks_diff_1k
-    second: {fileID: 2800000, guid: b4d24df5c2000254baad28789138111e, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: dark_wooden_planks_nor_gl_1k
-    second: {fileID: 2800000, guid: ce2e09d7f425f914fbcb71c37c9945f5, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: dark_wooden_planks_rough_1k
-    second: {fileID: 2800000, guid: e135f006fb9cc70458c51ced3333f4f9, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
       name: ipn_rough_p
     second: {fileID: 2800000, guid: 748e5a72402ff7a499653534d15f5b8f, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: potted_plant_02_pot_diff_1k
-    second: {fileID: 2800000, guid: c2b64f1ef22942145a3eb3c48848243a, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: potted_plant_02_pot_nor_gl_1k
-    second: {fileID: 2800000, guid: 54c473ebd32d9574ebab8bb90d4571b6, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: potted_plant_02_pot_rough_1k
-    second: {fileID: 2800000, guid: ddeaa94e302c49847821d7fb5fac16ef, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: potted_plant_04_diff_1k
-    second: {fileID: 2800000, guid: 9621e3cce83c81048a79b3a7f389d6c9, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: potted_plant_04_nor_gl_1k
-    second: {fileID: 2800000, guid: d085dc5a0810dbb4f94de4be85481789, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: potted_plant_04_rough_1k
-    second: {fileID: 2800000, guid: 9e8a3fc4bc626774f88b5772a634539f, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
