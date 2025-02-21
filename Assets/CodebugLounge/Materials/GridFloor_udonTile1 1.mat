@@ -8,21 +8,21 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: GridFloor_udonTile1 1
-  m_Shader: {fileID: 4800000, guid: c331f6c43a2ef0945864cb668f2653c9, type: 3}
+  m_Shader: {fileID: 4800000, guid: 0b7113dea2069fc4e8943843eff19f70, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _ENABLE_GEOMETRIC_SPECULAR_AA
+  m_InvalidKeywords:
   - _REFLECTIONS
   - _SPECULAR_HIGHLIGHTS
   - _USE_WORLD_SCALE
-  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: -1
   stringTagMap:
     DisableBatching: False
-    RenderType: Opaque
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -61,7 +61,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 320638a2d092b254390ed39621c290ce, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0358d551d57887a46bce002a4bac1b22, type: 3}
         m_Scale: {x: 9, y: 4}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -84,6 +84,7 @@ Material:
     m_Floats:
     - _AlbedoAlphaMode: 0
     - _AlbedoAssignedAtRuntime: 0
+    - _Bicubic: 0
     - _BlendOp: 0
     - _BlendedClippingWidth: 0
     - _BlurBorderIntensity: 0
@@ -111,6 +112,7 @@ Material:
     - _EdgeSmoothingValue: 0.002
     - _EnableChannelMap: 0
     - _EnableEmission: 0
+    - _EnableGeometricSpecularAA: 1
     - _EnableHoverColorOverride: 0
     - _EnableLocalSpaceTriplanarMapping: 0
     - _EnableNormalMap: 0
@@ -138,6 +140,7 @@ Material:
     - _IridescenceAngle: -0.78
     - _IridescenceIntensity: 0.5
     - _IridescenceThreshold: 0.05
+    - _LightmapType: 0
     - _Metallic: 0
     - _MipmapBias: -2
     - _Mode: 0
@@ -160,6 +163,8 @@ Material:
     - _RoundCornersHideInterior: 0
     - _Smoothness: 0.24
     - _SmoothnessTextureChannel: 0
+    - _SpecularAAScreenSpaceVariance: 0.1
+    - _SpecularAAThreshold: 0.2
     - _SpecularHighlights: 1
     - _SphericalHarmonics: 0
     - _SrcBlend: 1
