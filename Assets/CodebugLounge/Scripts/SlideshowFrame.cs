@@ -17,7 +17,7 @@ public class SlideshowFrame : UdonSharpBehaviour
     private VRCUrl stringUrl;
     
     [SerializeField, Tooltip("Renderer to show downloaded images on.")]
-    private new Renderer renderer;
+    private new Renderer[] renderers;
     
     [SerializeField, Tooltip("Text field for captions.")]
     private TMP_Text field;
@@ -59,6 +59,7 @@ public class SlideshowFrame : UdonSharpBehaviour
     
     private void LoadNext()
     {
+
         // All clients share the same server time. That's used to sync the currently displayed image.
         _loadedIndex = (int)(Networking.GetServerTimeInMilliseconds() / 1000f / slideDurationSeconds) % imageUrls.Length;
         _loadedIndex = Random.Range(0, imageUrls.Length);
@@ -68,10 +69,10 @@ public class SlideshowFrame : UdonSharpBehaviour
         if (nextTexture != null)
         {
             // Image already downloaded! No need to download it again.
-            renderer.sharedMaterial.mainTexture = nextTexture;
+            GetComponent<Renderer>().sharedMaterial.mainTexture = nextTexture;
             CorrectImageSize(nextTexture);
             
-           
+        
             //renderer.transform.localScale = new Vector3(1, aspectRatio, 1);
             Debug.Log("Image dimensionsEXISTING: " + nextTexture.width + "x" + nextTexture.height);
             UpdateCaptionText();
@@ -82,9 +83,8 @@ public class SlideshowFrame : UdonSharpBehaviour
             rgbInfo.GenerateMipMaps = true;
             rgbInfo.WrapModeV = TextureWrapMode.Clamp;
             rgbInfo.WrapModeU = TextureWrapMode.Clamp;
-            _imageDownloader.DownloadImage(imageUrls[_loadedIndex], renderer.material, _udonEventReceiver, rgbInfo);
+            _imageDownloader.DownloadImage(imageUrls[_loadedIndex], GetComponent<Renderer>().material, _udonEventReceiver, rgbInfo);
         }
-        
         
     }
 
@@ -125,16 +125,18 @@ public class SlideshowFrame : UdonSharpBehaviour
     void CorrectImageSize(Texture2D texture)
     {
         float aspectRatio = (float)texture.width / texture.height;
-        if (aspectRatio > 1)
+        Vector3 screenScale = GetComponent<Renderer>().transform.localScale;
+
+        if (aspectRatio > screenScale.x / screenScale.y)    
         {
-            renderer.sharedMaterial.mainTextureScale = new Vector2(1, 1*aspectRatio);
-            renderer.sharedMaterial.mainTextureOffset = new Vector2(0, (1 - aspectRatio) / 2);
+            GetComponent<Renderer>().sharedMaterial.mainTextureScale = new Vector2(1, screenScale.y*aspectRatio);
+            GetComponent<Renderer>().sharedMaterial.mainTextureOffset = new Vector2(0, (1 - screenScale.y*aspectRatio) / 2);
 
         }
         else
         {
-            renderer.sharedMaterial.mainTextureScale = new Vector2(1/aspectRatio, 1);
-            renderer.sharedMaterial.mainTextureOffset = new Vector2((1 - 1 / aspectRatio) / 2, 0);
+            GetComponent<Renderer>().sharedMaterial.mainTextureScale = new Vector2((1/aspectRatio)*screenScale.x, 1);
+            GetComponent<Renderer>().sharedMaterial.mainTextureOffset = new Vector2((1 - (1/aspectRatio)*screenScale.x) / 2, 0);
 
             
         }
