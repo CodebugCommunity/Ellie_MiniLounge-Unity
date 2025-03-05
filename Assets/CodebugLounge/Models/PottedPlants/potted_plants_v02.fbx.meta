@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: be95cc13ce8cbe04bb046d76f58ee1a5
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blue_flowblue_flower_pistil
+    second: {fileID: 2100000, guid: c0ee00efe12178d409a2be2374bd7531, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blue_flower
+    second: {fileID: 2100000, guid: cb4df587557eb684b982da7d06eb1fe9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flower_heliophila.001
+    second: {fileID: 2100000, guid: 7083de527c24549429e5ae18499bab59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flower_ursinia.001
+    second: {fileID: 2100000, guid: 01e5a80753320a845bb3b6c1b53997e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: othonna_cerarioides.001
+    second: {fileID: 2100000, guid: 717cb48c15f111049843ead1b6fa935c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_01_leaves
+    second: {fileID: 2100000, guid: 664420c0e75223341876c9c085c1a7c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_01_pot
+    second: {fileID: 2100000, guid: 98fd83c6106e3f04dae13e3548c4009b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_02_leaves
+    second: {fileID: 2100000, guid: cf382a216269ed84dbda66b7e0c9a474, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_02_pot
+    second: {fileID: 2100000, guid: 2bbb4b7afe3f5fe4f8e391c8afdbd465, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: searsia_lucida_leaves.001
+    second: {fileID: 2100000, guid: 15da4224dd23400409fd1d4d80cf861e, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: flower_heliophila_diff_1k
+    second: {fileID: 2800000, guid: b9e4b3904a13d864aa5ed4ae18a33baa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: flower_heliophila_nor_gl_1k
+    second: {fileID: 2800000, guid: 282abd18affa6254cb24ca78277d2f84, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: flower_heliophila_rough_1k
+    second: {fileID: 2800000, guid: 931c7be787f677c4c817b5671709cad7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: flower_petal
+    second: {fileID: 2800000, guid: 83881b81849233044b85bde7cb991c8f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: flower_petal_rght
+    second: {fileID: 2800000, guid: a5067c6d6200e7949b32820473e1135e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: flower_ursinia_diff_1k
+    second: {fileID: 2800000, guid: 4986e285c8aa498469f35469d7e0abe2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: flower_ursinia_rough_1k
+    second: {fileID: 2800000, guid: dcd9d8615fbff554f9f20cd06ee6f847, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: othonna_cerarioides_diff_1k
+    second: {fileID: 2800000, guid: 5ce1dbc9eb1629848828a7e7e1e1e5cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: othonna_cerarioides_nor_gl_1k
+    second: {fileID: 2800000, guid: 64da6568996782e4c8947b153ab68487, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: othonna_cerarioides_rough_1k
+    second: {fileID: 2800000, guid: 9cbeaad28c3c29d49bd77637a44dda44, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_01_leaves_diff_1k
+    second: {fileID: 2800000, guid: d2482f554f3d42b48a5528dc75cd77fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_01_leaves_nor_gl_1k
+    second: {fileID: 2800000, guid: ad53ae6c875bae640b78d9d0f6e8d8bd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_01_leaves_rough_1k
+    second: {fileID: 2800000, guid: 556e8baa9d4e81845a528412ca06a297, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_01_pot_diff_1k
+    second: {fileID: 2800000, guid: e52440d06d837d045953cf267d7254d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_01_pot_nor_gl_1k
+    second: {fileID: 2800000, guid: 52f6cf2c657cd844ea2bdb6e29f6b3d9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_01_pot_rough_1k
+    second: {fileID: 2800000, guid: 2b98941106494a145b28229df3bc2cdd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_02_leaves_diff_1k
+    second: {fileID: 2800000, guid: 22116398172c77448992d989f35da911, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_02_leaves_nor_gl_1k
+    second: {fileID: 2800000, guid: c7c5dd3b96a409c4fb32ba24de2c1934, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_02_leaves_rough_1k
+    second: {fileID: 2800000, guid: 17a2f995e1507b445a66b3ce75d640e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_02_pot_diff_1k
+    second: {fileID: 2800000, guid: 1df71ec013c0e9e4aa4e8a18ecaf969a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_02_pot_nor_gl_1k
+    second: {fileID: 2800000, guid: ac86308e93a66ab4e9e4c54d65947b1e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_02_pot_rough_1k
+    second: {fileID: 2800000, guid: c306df71bd478a14cbaa6d2b33f11f6f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: searsia_lucida_diff_1k
+    second: {fileID: 2800000, guid: a703ff2d603b081449d82c70553c7ba8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: searsia_lucida_nor_gl_1k
+    second: {fileID: 2800000, guid: 08bf35b4c0260cf4cb84b9664eaf5ef4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: searsia_lucida_rough_1k
+    second: {fileID: 2800000, guid: e269495202a1f90488a6374b389ba560, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
