@@ -1,23 +1,64 @@
 ﻿
+using System;
 using System.Collections;
 using UdonSharp;
 using UnityEngine;
 using UnityEngine.AI;
 using VRC.SDKBase;
 using VRC.Udon;
+using Random = UnityEngine.Random;
 
 public class CodebugFeeder : UdonSharpBehaviour
 {
-    public NavMeshAgent[] codebugs;
+    [SerializeField] NavMeshAgent[] codebugs;
 
-    public Transform randomCenter;
+    [SerializeField] Transform[] randomCenters;
+    
+    [SerializeField]CodebugState[] codebugStates  = new CodebugState[20];
+    Vector4[] positions = new Vector4[20];
+    [SerializeField] float targetUpdateFreq = 1;
+    [SerializeField] float transitUpdateFreq = 5;
+    
+    [SerializeField] private Renderer grassRenderer;
+    private Material grassMaterial;
     
     float timer = 0;
+    float timerTransit = 0;
+
+    private void Awake()
+    {
+        
+        for (int i = 0; i < codebugs.Length; i++)
+        {
+            codebugStates[i] = GetClosestState(codebugs[i].gameObject.transform.position);
+        }
+
+        grassMaterial = grassRenderer.material;
+    }
     
+    private CodebugState GetClosestState(Vector3 position)
+    {
+        float minDistance = float.MaxValue;
+        int closestIndex = 0;
+
+        for (int i = 0; i < randomCenters.Length; i++)
+        {
+            float distance = Vector3.Distance(position, randomCenters[i].position);
+            if (distance < minDistance)
+            {
+                minDistance = distance;
+                closestIndex = i;
+            }
+        }
+
+        return (CodebugState)closestIndex;
+    }
+
     void Start()
     {
         InteractionText = "Feed Codebugs";
         DisableInteractive = false;
+        
     }
     
     public override void Interact()
@@ -31,16 +72,42 @@ public class CodebugFeeder : UdonSharpBehaviour
     
     private void Update()
     {
+        for (int i = 0; i < codebugs.Length; i++)
+        {
+            positions[i] = codebugs[i].gameObject.transform.position;
+        }
+
+        grassRenderer.material.SetVectorArray("_PlayerPositions", positions);
+        
+        
         timer -= Time.deltaTime;
+        
         if (timer<0)
         {
-            foreach (NavMeshAgent codebug in codebugs)
+            for (int i = 0; i < codebugs.Length; i++)
             {
-                Vector3 randomDirection = Random.insideUnitSphere * 13;
-                codebugs[Random.Range(0,codebugs.Length)].SetDestination(randomCenter.position + randomDirection);
+                Transform randomCenter = randomCenters[(int)codebugStates[i]];
+                Vector3 randomDirection = Random.insideUnitSphere * (randomCenter.localScale.x * 0.5f);
+                
+                codebugs[i].SetDestination(randomCenter.position + randomDirection);
             }
             
-            timer = 1;
+            timer = targetUpdateFreq;
+        }
+
+        timerTransit -= Time.deltaTime;
+        if (timerTransit < 0)
+        {
+            codebugStates[Random.Range(0, codebugs.Length)] = (CodebugState)Random.Range(0, 3);
+            
+            timerTransit = transitUpdateFreq;
         }
     }
+}
+
+enum CodebugState
+{
+    Main,
+    Wall,
+    Center
 }
