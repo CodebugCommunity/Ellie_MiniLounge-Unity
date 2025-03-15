@@ -9,6 +9,8 @@ using TMPro;
 [UdonBehaviourSyncMode(BehaviourSyncMode.Continuous)]
 public class OkPanel : UdonSharpBehaviour
 {
+    
+    public float startScale;
     public TextMeshProUGUI ownerLabel;
     public TextMeshProUGUI colorSliderLabel;
     public TextMeshProUGUI pickupLabel;
@@ -226,7 +228,7 @@ public class OkPanel : UdonSharpBehaviour
 
     public void ImageSizeUpdate()
     {
-        var newScale = 1.0f + ImageSize * (ImageSize < 0 ? 0.1f : 0.2f);
+        var newScale = startScale + ImageSize * (ImageSize < 0 ? 0.1f : 0.2f);
         if (ImageSize > 5)
         {
             newScale += (ImageSize - 5) * 0.4f;

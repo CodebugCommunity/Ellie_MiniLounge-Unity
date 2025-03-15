@@ -7,6 +7,12 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.cyan.cyantrigger": {
+      "version": "file:com.cyan.cyantrigger",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.emymin.emychess": {
       "version": "file:com.emymin.emychess",
       "depth": 0,
@@ -262,6 +268,12 @@
         "com.unity.inputsystem": "1.2.0",
         "com.unity.ai.navigation": "1.1.5"
       }
+    },
+    "com.z3y.vrcmarker": {
+      "version": "file:com.z3y.vrcmarker",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
     },
     "dev.onevr.vrworldtoolkit": {
       "version": "file:dev.onevr.vrworldtoolkit",
