@@ -12,8 +12,33 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: IPN.001
+    second: {fileID: 2100000, guid: b8c05b87ba5e16f4e93cdd5de476bd33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IPN.002
+    second: {fileID: 2100000, guid: 6a5b00a7e085df045ab235f2049a76ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 6308759df5ae15347911d03e3de4c79e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 703dfd9f8b15e0849a45251c0882bca7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: aluminium
     second: {fileID: 2100000, guid: 9f4efacb7f486664c8ec673e4a14dfb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aluminium.001
+    second: {fileID: 2100000, guid: b335b6c843e317b4492117f741a80d8c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -44,6 +69,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: brushed_concrete
     second: {fileID: 2100000, guid: 7715094d98695a24aac208ecded8bfa2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cloth
+    second: {fileID: 2100000, guid: d59d890831d6f4443b0cfaaf011aecfc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -84,6 +114,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: dark_wooden_planks
     second: {fileID: 2100000, guid: 3a28162e046c93c4b8e6f7721dd7ff15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: firefly_light
+    second: {fileID: 2100000, guid: 67cdae514149b2142a855504846b6726, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

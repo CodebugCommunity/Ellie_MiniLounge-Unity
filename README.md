@@ -25,7 +25,10 @@
 - https://github.com/MochiesCode/Mochies-Unity-Shaders
 - https://github.com/llealloo/audiolink
 - https://github.com/microsoft/MixedReality-GraphicsTools-Unity
-
+- https://github.com/moonvrc/JoinNotificationSystem
+- https://github.com/MarekMarchlewicz/Painting/tree/master
+- https://github.com/z3y/VRCMarker
+- https://fionna.booth.pm/items/3203358
 
 
 ## External assets used:
@@ -48,3 +51,5 @@
 - [Can of beans](https://sketchfab.com/3d-models/can-of-beans-566323fb276f4fa7ac2943b38bb4e98d) by Urpo
 - [Coffee machine](https://sketchfab.com/3d-models/stylized-vintage-coffee-machine-f04cee3f96c24f1ea30ddbff32ce7aa5) by jellystuff
 - [Scifi button](https://sketchfab.com/3d-models/scifi-button-8dcd82d477e441d7b6789f1851924b5f) by lorib2306
+- [Basket of oranges](https://sketchfab.com/3d-models/basket-of-oranges-b9c654a534e1436ebabb541042bf5fe8) by Massimiliano Castiglione
+- [Easel](https://sketchfab.com/3d-models/easel-easel-with-painting-449501e5ac704151b2f913649617dc7c) by Every 3D
