@@ -22,6 +22,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: IPN_bolts
+    second: {fileID: 2100000, guid: 6a5b00a7e085df045ab235f2049a76ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material
     second: {fileID: 2100000, guid: 6308759df5ae15347911d03e3de4c79e, type: 2}
   - first:
@@ -82,6 +87,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: concrete.001
+    second: {fileID: 2100000, guid: 991b4270a4fb63f4682d588fa65441ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: copper
     second: {fileID: 2100000, guid: 9884fc4b081af7d46bba417e9d119a16, type: 2}
   - first:
@@ -117,13 +127,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: dark_wooden_planks.001
+    second: {fileID: 2100000, guid: 3a28162e046c93c4b8e6f7721dd7ff15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: firefly_light
     second: {fileID: 2100000, guid: 67cdae514149b2142a855504846b6726, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: glass
-    second: {fileID: 2100000, guid: b32e834a97b85b048a44faa694018b4c, type: 2}
+    second: {fileID: 2100000, guid: 95a0c868bed168544848b1094dbaf6cf, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -179,6 +194,156 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: wings
     second: {fileID: 2100000, guid: 859f135521f6d5448bb4e3893c099da3, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2K-fabric_47_Normal
+    second: {fileID: 2800000, guid: aade9b38a9f3f2046bb9ae6a8d6d9f45, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2K-fabric_47_baseColor
+    second: {fileID: 2800000, guid: 2a5486e136078c644b5ac7ef97fec7b6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fence008B_2K_Color
+    second: {fileID: 2800000, guid: 5119072311331814494de790ae88a6a8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fence008B_2K_Metal
+    second: {fileID: 2800000, guid: 57e61d2a993861f4f806e166301971fa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fence008B_2K_NormalGL
+    second: {fileID: 2800000, guid: bf2d8d2658a0b4e40b268dc521843e59, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fence008B_2K_Rough
+    second: {fileID: 2800000, guid: 97d767f2f1262454d9af1ff151abbe76, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bar_tech_marble_diff_p
+    second: {fileID: 2800000, guid: 6de13c89e94e5f245b190380016f6027, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bar_tech_marble_rough_p
+    second: {fileID: 2800000, guid: 4816286ca3a31a243b63b53cd37a039c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bar_tech_marble_spec_p
+    second: {fileID: 2800000, guid: 8c201f541dab72d4fa3c59a97356c15e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: brown_mud_02_diff_1k
+    second: {fileID: 2800000, guid: 866424d31aca5dd45873ef2e8fe3cc57, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: brown_mud_02_nor_gl_1k
+    second: {fileID: 2800000, guid: 17ac0ed569166724a83cb2ee969b24fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: brown_mud_02_rough_1k
+    second: {fileID: 2800000, guid: 881b2f8f09f25a84a843bbae7f98fecf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: brushed_concrete_diff_1k
+    second: {fileID: 2800000, guid: e8cd54052ed19734c82dd62f627a4596, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: brushed_concrete_nor_gl_1k
+    second: {fileID: 2800000, guid: 475c521d42149674db0b4f75f7958b03, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: brushed_concrete_rough_1k
+    second: {fileID: 2800000, guid: cb40fae8a965c444a8c7da8138cd3515, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: city_scape_diff
+    second: {fileID: 2800000, guid: e4c2b6943bebd764db16edf318b21894, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: concrete-diff
+    second: {fileID: 2800000, guid: 0f20d1ce451b4af44b441480b9d171d6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: concrete_rght
+    second: {fileID: 2800000, guid: d612a5ebe2d7b7f41a8c7fe4dc0bc5fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: corrugated_iron_02_diff_1k
+    second: {fileID: 2800000, guid: 3703901f67ce46740b83c651e01bee7c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: corrugated_iron_02_metal_1k
+    second: {fileID: 2800000, guid: ba9d493e3c8573f418656a64c3dafe5e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: corrugated_iron_02_nor_gl_1k
+    second: {fileID: 2800000, guid: e88ec9bd1f59eb64ca2fd86f83fcf9d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: corrugated_iron_02_rough_1k
+    second: {fileID: 2800000, guid: 26450898c1dddac4c9ec12cfaf269bda, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark_wood_diff_1k
+    second: {fileID: 2800000, guid: 899d7f261939bcb4083601057c69adae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark_wood_nor_gl_1k
+    second: {fileID: 2800000, guid: 73f67281493ce6348b27bd8a9688ae2b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark_wood_rough_1k
+    second: {fileID: 2800000, guid: e9da8fd974357bf4ab22709116c9eced, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark_wooden_planks_diff_1k
+    second: {fileID: 2800000, guid: 4bd15e6e313049e4481b750a7edfb324, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark_wooden_planks_nor_gl_1k
+    second: {fileID: 2800000, guid: a41490996c85f0c489f66e95b80446ab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark_wooden_planks_rough_1k
+    second: {fileID: 2800000, guid: e5641df490bf8b44da4d912c0f0a2419, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ipn_diff_p
+    second: {fileID: 2800000, guid: ee2f64ace88c1b545bff342c9019c66d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ipn_rough_p
+    second: {fileID: 2800000, guid: 20e828d8a9358c4448a85fe9d2dd69de, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

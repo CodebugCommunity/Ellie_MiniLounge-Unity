@@ -3,7 +3,42 @@ guid: 165a3674b4ba73944baf5bd4a5de16d2
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bark_willow_02
+    second: {fileID: 2100000, guid: ba50a8fd5e9ca8b4380a390bf9ee6a5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dandelion_LOD2
+    second: {fileID: 2100000, guid: 5c1db458f96d1144fa2296d43a3ee53e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leaf.001
+    second: {fileID: 2100000, guid: c556e55c0c5121e428d36e5691737d0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shrub_LOD1
+    second: {fileID: 2100000, guid: 0f8ee5742b0fcda438ea9b9a2e8704a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sorrel_LOD2
+    second: {fileID: 2100000, guid: f75e50038084f2649839677d1b3433cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vines2_lod2
+    second: {fileID: 2100000, guid: bc21543d57fd7b1448a2eaad13c75b1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vines_lod2
+    second: {fileID: 2100000, guid: ae9f0462a74dd5447957e7f337c90688, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

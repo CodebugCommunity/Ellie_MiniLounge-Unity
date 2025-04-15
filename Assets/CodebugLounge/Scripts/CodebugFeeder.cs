@@ -19,7 +19,7 @@ public class CodebugFeeder : UdonSharpBehaviour
     [SerializeField] float targetUpdateFreq = 1;
     [SerializeField] float transitUpdateFreq = 5;
     
-    [SerializeField] private Renderer grassRenderer;
+    [SerializeField] private Renderer[] grassRenderers;
     private Material grassMaterial;
     
     float timer = 0;
@@ -33,7 +33,7 @@ public class CodebugFeeder : UdonSharpBehaviour
             codebugStates[i] = GetClosestState(codebugs[i].gameObject.transform.position);
         }
 
-        grassMaterial = grassRenderer.material;
+        grassMaterial = grassRenderers[0].material;
     }
     
     private CodebugState GetClosestState(Vector3 position)
@@ -77,7 +77,11 @@ public class CodebugFeeder : UdonSharpBehaviour
             positions[i] = codebugs[i].gameObject.transform.position;
         }
 
-        grassRenderer.material.SetVectorArray("_PlayerPositions", positions);
+        foreach (var renderer in grassRenderers)
+        {
+            renderer.material.SetVectorArray("_PlayerPositions", positions);
+        }
+        
         
         
         timer -= Time.deltaTime;

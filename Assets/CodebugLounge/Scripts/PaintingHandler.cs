@@ -14,7 +14,7 @@ public class PaintingHandler : UdonSharpBehaviour
     {
         SendCustomNetworkEvent(NetworkEventTarget.All, nameof(SetState));
         
-        
+        Debug.Log("Interact");
     }
     
     public void SetState()
