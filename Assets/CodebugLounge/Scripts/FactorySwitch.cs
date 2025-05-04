@@ -18,7 +18,11 @@ public class FactorySwitch : UdonSharpBehaviour
         UpdateVisuals();
         foreach (GameObject o in ObjectsToToggle)
         {
-            o.SetActive(state);
+            if (o != null)
+            {
+                o.SetActive(state);
+            }
+            
         }
     }
     
