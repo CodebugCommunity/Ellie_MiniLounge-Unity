@@ -7,21 +7,6 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: IPN
-    second: {fileID: 2100000, guid: d3558fb8cbe82a344b4faedd75fe455c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: IPN.001
-    second: {fileID: 2100000, guid: b8c05b87ba5e16f4e93cdd5de476bd33, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: IPN.002
-    second: {fileID: 2100000, guid: 6a5b00a7e085df045ab235f2049a76ff, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: IPN_bolts
     second: {fileID: 2100000, guid: 6a5b00a7e085df045ab235f2049a76ff, type: 2}
   - first:
@@ -52,83 +37,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: blue_emmissive.001
-    second: {fileID: 2100000, guid: dea2e38a598de1849a22a8bad08b8317, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: brass
     second: {fileID: 2100000, guid: 7eb7098c78033084787ffac07e881bef, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: brass.001
-    second: {fileID: 2100000, guid: 815a8735f0de97e4399432f925e7a5da, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: brown_mud_02
-    second: {fileID: 2100000, guid: 1ff0729db9eb61d41b4aad0a02a20295, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: brushed_concrete
-    second: {fileID: 2100000, guid: 7715094d98695a24aac208ecded8bfa2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: cloth
-    second: {fileID: 2100000, guid: d59d890831d6f4443b0cfaaf011aecfc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: concrete
-    second: {fileID: 2100000, guid: 991b4270a4fb63f4682d588fa65441ec, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: concrete.001
-    second: {fileID: 2100000, guid: 991b4270a4fb63f4682d588fa65441ec, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: copper
-    second: {fileID: 2100000, guid: 9884fc4b081af7d46bba417e9d119a16, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: copper.001
-    second: {fileID: 2100000, guid: 7c5fac02c4f4ac446b8318b05b7fb903, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: corrugated_iron_02
-    second: {fileID: 2100000, guid: c92038db989d3094fb9cdc91a92a9539, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: dark_wood
-    second: {fileID: 2100000, guid: 626f740715ef15847a7a0f70b2ac2065, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: dark_wood.001
-    second: {fileID: 2100000, guid: e168b8b005a5f63469b227be264fa2de, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: dark_wood.002
-    second: {fileID: 2100000, guid: 11497fd774103d243a9f41c00aa5142c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: dark_wooden_planks
-    second: {fileID: 2100000, guid: 3a28162e046c93c4b8e6f7721dd7ff15, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: dark_wooden_planks.001
-    second: {fileID: 2100000, guid: 3a28162e046c93c4b8e6f7721dd7ff15, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -142,23 +52,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: grid.001
-    second: {fileID: 2100000, guid: e7ce733ac74f3ef45955beeb05ce7434, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: metal
-    second: {fileID: 2100000, guid: 9f39020e7b0209a418604e072d7f28f0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: metal.001
     second: {fileID: 2100000, guid: e02b9ab1980e7cf428b56dac6c9932ac, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: metal.002
-    second: {fileID: 2100000, guid: b9da1835a11d9dd4eaeabe45c287f858, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -174,26 +69,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: potted_plant_04
     second: {fileID: 2100000, guid: 144d1ffba694ef246a2e843a6529c184, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: shell
-    second: {fileID: 2100000, guid: 095b456d06691d04f86240d8fca735d2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: shell.001
-    second: {fileID: 2100000, guid: 3a09f4733fa238b4e8164737309115cb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: tech_arble
-    second: {fileID: 2100000, guid: 59e4ecf6bb80f3a4082953427b8aa834, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: wings
-    second: {fileID: 2100000, guid: 859f135521f6d5448bb4e3893c099da3, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
