@@ -87,6 +87,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: grid.001
+    second: {fileID: 2100000, guid: 72b9f7ed31615c34f93b39bdc647ab4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grid.002
+    second: {fileID: 2100000, guid: 8776a0501d49b204ea0fd3ac996f6a39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: leaf
     second: {fileID: 2100000, guid: c556e55c0c5121e428d36e5691737d0a, type: 2}
   - first:

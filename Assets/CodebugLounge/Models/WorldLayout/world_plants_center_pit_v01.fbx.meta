@@ -12,6 +12,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: didelta_spinosa.001
+    second: {fileID: 2100000, guid: 31245ccf0f672ea459d2dc9ac081f9a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: shrub_sorrel_01.001
     second: {fileID: 2100000, guid: fe0e05bf991295040bbde9f621da0776, type: 2}
   - first:

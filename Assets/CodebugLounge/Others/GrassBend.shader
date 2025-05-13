@@ -7,7 +7,7 @@ Shader "Custom/GrassBendShader" {
     SubShader {
         Tags { "RenderType"="Opaque" }
         LOD 200
-
+        Cull Off
         CGPROGRAM
         // Use the Standard lighting model with a custom vertex modifier
         #pragma surface surf Standard vertex:VertMod
