@@ -57,7 +57,11 @@ public class SlideshowFrame : UdonSharpBehaviour
         // All clients share the same server time. That's used to sync the currently displayed image.
         _loadedIndex = (int)(Networking.GetServerTimeInMilliseconds() / 1000f / slideDurationSeconds) % imageUrls.Length;
         //_loadedIndex = Random.Range(0, imageUrls.Length);
-        
+
+        if (_loadedIndex > _downloadedTextures.Length)
+        {
+            SendCustomEventDelayedSeconds(nameof(LoadNext), slideDurationSeconds);
+        }
         var nextTexture = _downloadedTextures[_loadedIndex];
         
         if (nextTexture != null)
