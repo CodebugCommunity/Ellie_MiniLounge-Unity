@@ -22,6 +22,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: bell_flower
+    second: {fileID: 2100000, guid: 66f10447c1b36be4f83835b73051651a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bell_flower_orange
+    second: {fileID: 2100000, guid: 8ad3bdc373fe33a4e84de6df38d4d647, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: blue_emmissive
     second: {fileID: 2100000, guid: ee4667978a522de4ea4bbfd697bbfca9, type: 2}
   - first:
@@ -134,6 +144,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: glass.001
     second: {fileID: 2100000, guid: b45e9eec3a140034aa4b48230816be77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: searsia_lucida_leaves.003
+    second: {fileID: 2100000, guid: d281fb30f3636ee45b6a4a1f4ec59420, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

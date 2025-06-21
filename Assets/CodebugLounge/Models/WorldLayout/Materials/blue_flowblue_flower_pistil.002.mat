@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: blue_flowblue_flower_pistil.002
-  m_Shader: {fileID: 4800000, guid: dd113410dcd0e417b82e8519b8a9f56d, type: 3}
+  m_Shader: {fileID: 4800000, guid: 3dbb2c7b4cbbf444494c98b46d660f2a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
