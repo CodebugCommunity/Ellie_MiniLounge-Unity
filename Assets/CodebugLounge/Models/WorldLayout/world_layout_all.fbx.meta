@@ -147,6 +147,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: grid.002
+    second: {fileID: 2100000, guid: 318feb7d84c77fd4988cfb4186ca76f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: searsia_lucida_leaves.003
     second: {fileID: 2100000, guid: d281fb30f3636ee45b6a4a1f4ec59420, type: 2}
   - first:
