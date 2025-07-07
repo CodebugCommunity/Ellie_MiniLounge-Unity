@@ -12,19 +12,32 @@ public class DaynightSwitcher : UdonSharpBehaviour
     [SerializeField]Material daySkybox;
     [SerializeField]Material nightSkybox;
     
-    void Start()
-    {
-        SetTimeOfDay();
-    }
-    bool isDay = true;
+    public bool state = false;
+    Transform switchTransform;
     
     public override void Interact()
     {
+        state = !state;
+        UpdateVisuals();
+       
+        
         isDay = !isDay;
         
         SetTimeOfDay();
-        
     }
+    
+    void UpdateVisuals()
+    {
+        switchTransform.localRotation = Quaternion.Euler(state ? -90 : 90, 0,0);
+    }
+    
+    void Start()
+    {
+        switchTransform = transform.GetChild(1);
+        SetTimeOfDay();
+    }
+    
+    bool isDay = false;
 
     void SetTimeOfDay()
     {
