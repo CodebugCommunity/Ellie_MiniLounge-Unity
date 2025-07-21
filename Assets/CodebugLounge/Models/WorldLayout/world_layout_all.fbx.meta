@@ -22,6 +22,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: aluminium
+    second: {fileID: 2100000, guid: 410764e7659a537409b135df7d9bcfb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: asphalt_02
+    second: {fileID: 2100000, guid: 960f6113cc4d56d4eb07056b743b054a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: bell_flower
     second: {fileID: 2100000, guid: 66f10447c1b36be4f83835b73051651a, type: 2}
   - first:

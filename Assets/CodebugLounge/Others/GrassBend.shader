@@ -7,9 +7,12 @@ Shader "Custom/GrassBendShader" {
     SubShader {
         Tags { "RenderType"="Opaque" }
         LOD 200
-        Cull Off
+        //Cull Off
         CGPROGRAM
         // Use the Standard lighting model with a custom vertex modifier
+
+        #pragma multi_compile _ LOD_FADE_CROSSFADE
+
         #pragma surface surf Standard vertex:VertMod
 
         sampler2D _MainTex;
@@ -19,6 +22,7 @@ Shader "Custom/GrassBendShader" {
 
         struct Input {
             float2 uv_MainTex;
+            float4 screenPos;
         };
 
         // Vertex modifier: offsets vertices away from the player when within _BendRadius
@@ -47,6 +51,12 @@ Shader "Custom/GrassBendShader" {
 
         // Surface function: sample the main texture
         void surf (Input IN, inout SurfaceOutputStandard o) {
+
+            #ifdef LOD_FADE_CROSSFADE
+            float2 vpos = IN.screenPos.xy / IN.screenPos.w * _ScreenParams.xy;
+            UnityApplyDitherCrossFade(vpos);
+            #endif
+
             fixed4 tex = tex2D(_MainTex, IN.uv_MainTex);
             o.Albedo = tex.rgb;
             o.Alpha = tex.a;
