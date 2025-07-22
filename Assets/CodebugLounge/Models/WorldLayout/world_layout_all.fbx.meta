@@ -162,6 +162,56 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: cb31a924b8813dd43839fa8a5ddecff3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal.001
+    second: {fileID: 2100000, guid: c2d18b641154d2f40859baeba2af0918, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal.002
+    second: {fileID: 2100000, guid: 77dbd40dd2d7df74a9c561d71019aae6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal.003
+    second: {fileID: 2100000, guid: 72800db20781e3b419e9bda06f6be3d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal.004
+    second: {fileID: 2100000, guid: 56a7212999c99e54e82fed95327e7c19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal.textured
+    second: {fileID: 2100000, guid: 7e38b5884d70b1f40b87691a2a7984df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal.textured.001
+    second: {fileID: 2100000, guid: 431ec9b07c2f51f44ae530ca66c88558, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_rgh
+    second: {fileID: 2100000, guid: 02a18aedbfef51342941bb538a37fe5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_rgh.001
+    second: {fileID: 2100000, guid: 2047b1291ba131c45bb605d365177fcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_rgh.002
+    second: {fileID: 2100000, guid: 0cf03cca89514604cbf0e39c6894be7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: searsia_lucida_leaves.003
     second: {fileID: 2100000, guid: d281fb30f3636ee45b6a4a1f4ec59420, type: 2}
   - first:
