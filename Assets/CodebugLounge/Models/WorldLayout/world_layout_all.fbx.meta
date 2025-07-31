@@ -102,6 +102,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: chain
+    second: {fileID: 2100000, guid: 9041c8499f32ff74b9b35835a2d8bbb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: chain.001
     second: {fileID: 2100000, guid: 0a72fb6db7efeee41921d481548396b3, type: 2}
   - first:
