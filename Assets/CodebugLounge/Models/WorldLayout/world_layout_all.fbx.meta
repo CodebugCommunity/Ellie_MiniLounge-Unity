@@ -217,6 +217,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: orange_emmissive.001
+    second: {fileID: 2100000, guid: dc7b68082148e7146842d445a3fdf0ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: orange_flower
+    second: {fileID: 2100000, guid: ece38a721f0e0eb47a7abd15b5da99fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: orange_flower.emissive
+    second: {fileID: 2100000, guid: 7b30a868cc491f44f88ae74b57767d50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: searsia_lucida_leaves.003
     second: {fileID: 2100000, guid: d281fb30f3636ee45b6a4a1f4ec59420, type: 2}
   - first:
