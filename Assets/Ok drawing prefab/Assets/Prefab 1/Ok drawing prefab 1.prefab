@@ -27763,6 +27763,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 7920893991893365147}
+  startScale: 0
   ownerLabel: {fileID: 7920893991869498693}
   colorSliderLabel: {fileID: 7920893991259383519}
   pickupLabel: {fileID: 7920893991315904662}
@@ -32012,6 +32013,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tool (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2759237436897534804, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2759237436897534804, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 2759237436897534806, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
         type: 3}
       propertyPath: m_RootOrder
@@ -32025,12 +32036,12 @@ PrefabInstance:
     - target: {fileID: 2759237436897534806, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2332
+      value: 1.2725
       objectReference: {fileID: 0}
     - target: {fileID: 2759237436897534806, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.16920006
+      value: -0.1549
       objectReference: {fileID: 0}
     - target: {fileID: 2759237436897534806, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
         type: 3}
@@ -32067,6 +32078,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2759237436897534807, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
+        type: 3}
+      propertyPath: serializedProgramAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 238f2b03bdb484c43a935b2945ea9702,
+        type: 2}
     - target: {fileID: 2759237436897534807, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
         type: 3}
       propertyPath: serializedPublicVariablesBytesString
@@ -33426,6 +33443,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2759237436897534804, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2759237436897534804, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 2759237436897534806, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
         type: 3}
       propertyPath: m_RootOrder
@@ -33439,12 +33466,12 @@ PrefabInstance:
     - target: {fileID: 2759237436897534806, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1813
+      value: 1.1425
       objectReference: {fileID: 0}
     - target: {fileID: 2759237436897534806, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.1881
+      value: -0.2022
       objectReference: {fileID: 0}
     - target: {fileID: 2759237436897534806, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
         type: 3}
@@ -33481,6 +33508,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2759237436897534807, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
+        type: 3}
+      propertyPath: serializedProgramAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 238f2b03bdb484c43a935b2945ea9702,
+        type: 2}
     - target: {fileID: 2759237436897534807, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
         type: 3}
       propertyPath: serializedPublicVariablesBytesString
@@ -34840,6 +34873,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2759237436897534804, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2759237436897534804, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 2759237436897534806, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
         type: 3}
       propertyPath: m_RootOrder
@@ -34895,6 +34938,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2759237436897534807, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
+        type: 3}
+      propertyPath: serializedProgramAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 238f2b03bdb484c43a935b2945ea9702,
+        type: 2}
     - target: {fileID: 2759237436897534807, guid: 7df0d7aa1b51ac54ab9ddc28ba75932d,
         type: 3}
       propertyPath: serializedPublicVariablesBytesString

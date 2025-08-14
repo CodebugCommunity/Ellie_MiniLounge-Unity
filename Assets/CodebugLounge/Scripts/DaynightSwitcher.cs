@@ -6,7 +6,8 @@ using VRC.Udon;
 
 public class DaynightSwitcher : UdonSharpBehaviour
 {
-    [SerializeField]GameObject day;
+    
+    [SerializeField] GameObject day;
     [SerializeField]GameObject night;
     
     [SerializeField]Material daySkybox;

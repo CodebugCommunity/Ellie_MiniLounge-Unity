@@ -53,7 +53,8 @@ public class CodebugFeeder : UdonSharpBehaviour
 
         return (CodebugState)closestIndex;
     }
-
+    
+    
     void Start()
     {
         InteractionText = "Feed Codebugs";

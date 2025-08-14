@@ -122,6 +122,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: concrete.002
+    second: {fileID: 2100000, guid: 44e85afc8e9754f499d56442ac66516e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: dark_wood
     second: {fileID: 2100000, guid: f217d3d5e44c3674ba30a60e06ee4caf, type: 2}
   - first:
@@ -234,6 +239,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: searsia_lucida_leaves.003
     second: {fileID: 2100000, guid: d281fb30f3636ee45b6a4a1f4ec59420, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sunny_rugs
+    second: {fileID: 2100000, guid: efd87c567a62a644d9fa3911784457cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sunny_rugs_new
+    second: {fileID: 2100000, guid: be2ffd2e8b196344a829315117fa7c2c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

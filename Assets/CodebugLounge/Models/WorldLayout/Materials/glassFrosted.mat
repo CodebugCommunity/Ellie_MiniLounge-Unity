@@ -21,7 +21,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3001
+  m_CustomRenderQueue: 3002
   stringTagMap:
     RenderType: Transparent
   disabledShaderPasses: []
@@ -155,7 +155,7 @@ Material:
     - _OcclusionStrength: 1
     - _OpaqueLights: 1
     - _Parallax: 0.02
-    - _QueueOffset: 1
+    - _QueueOffset: 2
     - _RainBias: -1
     - _RainMaskChannel: 0
     - _RainMode: 0
