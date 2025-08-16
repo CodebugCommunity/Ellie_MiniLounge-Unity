@@ -15,38 +15,33 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: dbb5ad92884bf8f468cb2bac22935d9e,
     type: 2}
   udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
-    .export trackingDataType\r\n  .export __12_ref_VRCSDKBaseVRCPlayerApi_TrackingData\r\n 
-    .export __14_ref_UnityEngineVector3\r\n  .export __16_ref_UnityEngineQuaternion\r\n 
+    .export trackingDataType\r\n  .export __11_ref_VRCSDKBaseVRCPlayerApi_TrackingData\r\n 
+    .export __13_ref_UnityEngineVector3\r\n  .export __15_ref_UnityEngineQuaternion\r\n 
     __CyanTrigger_ProgramName_SystemString: %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString:
     %SystemString, null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
     %SystemUInt32, null\r\n  _this_transform: %UnityEngineTransform, this\r\n  _this_local_player:
     %VRCSDKBaseVRCPlayerApi, null\r\n  trackingDataType: %VRCSDKBaseVRCPlayerApiTrackingDataType,
-    null\r\n  __10___jump_return_0_SystemUInt32: %SystemUInt32, null\r\n  __11_local_var_VRCSDKBaseVRCPlayerApi_TrackingData:
-    %VRCSDKBaseVRCPlayerApiTrackingData, null\r\n  __12_ref_VRCSDKBaseVRCPlayerApi_TrackingData:
-    %VRCSDKBaseVRCPlayerApiTrackingData, null\r\n  __13_local_var_UnityEngineVector3:
-    %UnityEngineVector3, null\r\n  __14_ref_UnityEngineVector3: %UnityEngineVector3,
-    null\r\n  __15_local_var_UnityEngineQuaternion: %UnityEngineQuaternion, null\r\n 
-    __16_ref_UnityEngineQuaternion: %UnityEngineQuaternion, null\r\n  __17_lp_init_SystemBoolean_ct_intern:
-    %SystemBoolean, null\r\n  __18_const_SystemBoolean: %SystemBoolean, null\r\n.data_end\r\n\n.code_start\r\n 
+    null\r\n  __10_local_var_VRCSDKBaseVRCPlayerApi_TrackingData: %VRCSDKBaseVRCPlayerApiTrackingData,
+    null\r\n  __11_ref_VRCSDKBaseVRCPlayerApi_TrackingData: %VRCSDKBaseVRCPlayerApiTrackingData,
+    null\r\n  __12_local_var_UnityEngineVector3: %UnityEngineVector3, null\r\n  __13_ref_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n  __14_local_var_UnityEngineQuaternion: %UnityEngineQuaternion,
+    null\r\n  __15_ref_UnityEngineQuaternion: %UnityEngineQuaternion, null\r\n  __16_lp_init_SystemBoolean_ct_intern:
+    %SystemBoolean, null\r\n  __17_const_SystemBoolean: %SystemBoolean, null\r\n.data_end\r\n\n.code_start\r\n 
     .export _postLateUpdate\r\n  _postLateUpdate:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
-    PUSH, __10___jump_return_0_SystemUInt32\r\n    JUMP, 0x00000034\r\n    PUSH,
-    __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
-    .export __intern_event_0_debug_execute\r\n  __intern_event_0_debug_execute:\r\n   
-    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __17_lp_init_SystemBoolean_ct_intern\r\n   
-    JUMP_IF_FALSE, 0x00000068\r\n    PUSH, __18_const_SystemBoolean\r\n    PUSH,
-    __17_lp_init_SystemBoolean_ct_intern\r\n    COPY\r\n    PUSH, _this_local_player\r\n   
-    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
-    PUSH, __12_ref_VRCSDKBaseVRCPlayerApi_TrackingData\r\n    PUSH, __11_local_var_VRCSDKBaseVRCPlayerApi_TrackingData\r\n   
+    PUSH, __16_lp_init_SystemBoolean_ct_intern\r\n    JUMP_IF_FALSE, 0x0000003C\r\n   
+    PUSH, __17_const_SystemBoolean\r\n    PUSH, __16_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __11_ref_VRCSDKBaseVRCPlayerApi_TrackingData\r\n    PUSH, __10_local_var_VRCSDKBaseVRCPlayerApi_TrackingData\r\n   
     COPY\r\n    PUSH, _this_local_player\r\n    PUSH, trackingDataType\r\n    PUSH,
-    __11_local_var_VRCSDKBaseVRCPlayerApi_TrackingData\r\n    EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetTrackingData__VRCSDKBaseVRCPlayerApiTrackingDataType__VRCSDKBaseVRCPlayerApiTrackingData\"\r\n   
-    PUSH, __14_ref_UnityEngineVector3\r\n    PUSH, __13_local_var_UnityEngineVector3\r\n   
-    COPY\r\n    PUSH, __16_ref_UnityEngineQuaternion\r\n    PUSH, __15_local_var_UnityEngineQuaternion\r\n   
-    COPY\r\n    PUSH, __11_local_var_VRCSDKBaseVRCPlayerApi_TrackingData\r\n    PUSH,
-    __13_local_var_UnityEngineVector3\r\n    EXTERN, \"VRCSDKBaseVRCPlayerApiTrackingData.__get_position__UnityEngineVector3\"\r\n   
-    PUSH, __11_local_var_VRCSDKBaseVRCPlayerApi_TrackingData\r\n    PUSH, __15_local_var_UnityEngineQuaternion\r\n   
+    __10_local_var_VRCSDKBaseVRCPlayerApi_TrackingData\r\n    EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetTrackingData__VRCSDKBaseVRCPlayerApiTrackingDataType__VRCSDKBaseVRCPlayerApiTrackingData\"\r\n   
+    PUSH, __13_ref_UnityEngineVector3\r\n    PUSH, __12_local_var_UnityEngineVector3\r\n   
+    COPY\r\n    PUSH, __15_ref_UnityEngineQuaternion\r\n    PUSH, __14_local_var_UnityEngineQuaternion\r\n   
+    COPY\r\n    PUSH, __10_local_var_VRCSDKBaseVRCPlayerApi_TrackingData\r\n    PUSH,
+    __12_local_var_UnityEngineVector3\r\n    EXTERN, \"VRCSDKBaseVRCPlayerApiTrackingData.__get_position__UnityEngineVector3\"\r\n   
+    PUSH, __10_local_var_VRCSDKBaseVRCPlayerApi_TrackingData\r\n    PUSH, __14_local_var_UnityEngineQuaternion\r\n   
     EXTERN, \"VRCSDKBaseVRCPlayerApiTrackingData.__get_rotation__UnityEngineQuaternion\"\r\n   
-    PUSH, _this_transform\r\n    PUSH, __13_local_var_UnityEngineVector3\r\n    PUSH,
-    __15_local_var_UnityEngineQuaternion\r\n    EXTERN, \"UnityEngineTransform.__SetPositionAndRotation__UnityEngineVector3_UnityEngineQuaternion__SystemVoid\"\r\n   
+    PUSH, _this_transform\r\n    PUSH, __12_local_var_UnityEngineVector3\r\n    PUSH,
+    __14_local_var_UnityEngineQuaternion\r\n    EXTERN, \"UnityEngineTransform.__SetPositionAndRotation__UnityEngineVector3_UnityEngineQuaternion__SystemVoid\"\r\n   
     PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
   assemblyError: 
   triggerHash: 4B9C82A4AD811F926E34FE951AF9A40C
@@ -264,7 +259,7 @@ MonoBehaviour:
     ignoreEventWarnings: 0
   publicVariableReferences:
     actionDataIndices:
-    - symbolName: __12_ref_VRCSDKBaseVRCPlayerApi_TrackingData
+    - symbolName: __11_ref_VRCSDKBaseVRCPlayerApi_TrackingData
       type:
         typeDef: VRC.SDKBase.VRCPlayerApi+TrackingData, VRCSDKBase, Version=1.0.0.0,
           Culture=neutral, PublicKeyToken=null
@@ -272,7 +267,7 @@ MonoBehaviour:
       actionIndex: 0
       variableIndex: 0
       multiVariableIndex: -1
-    - symbolName: __14_ref_UnityEngineVector3
+    - symbolName: __13_ref_UnityEngineVector3
       type:
         typeDef: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
           PublicKeyToken=null
@@ -280,7 +275,7 @@ MonoBehaviour:
       actionIndex: 2
       variableIndex: 0
       multiVariableIndex: -1
-    - symbolName: __16_ref_UnityEngineQuaternion
+    - symbolName: __15_ref_UnityEngineQuaternion
       type:
         typeDef: UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null

@@ -47,8 +47,7 @@ public class SlideshowFrame : UdonSharpBehaviour
         // Captions are downloaded once. On success, OnImageLoadSuccess() will be called.
         VRCStringDownloader.LoadUrl(stringUrl, _udonEventReceiver);
         
-        // Load the next image. Then do it again, and again, and...
-        LoadNext();
+       
     }
     
     public void LoadNext()
@@ -56,12 +55,7 @@ public class SlideshowFrame : UdonSharpBehaviour
     
         // All clients share the same server time. That's used to sync the currently displayed image.
         _loadedIndex = (int)(Networking.GetServerTimeInMilliseconds() / 1000f / slideDurationSeconds) % imageUrls.Length;
-        //_loadedIndex = Random.Range(0, imageUrls.Length);
 
-        if (_loadedIndex > _downloadedTextures.Length)
-        {
-            SendCustomEventDelayedSeconds(nameof(LoadNext), slideDurationSeconds);
-        }
         var nextTexture = _downloadedTextures[_loadedIndex];
         
         if (nextTexture != null)
@@ -98,6 +92,10 @@ public class SlideshowFrame : UdonSharpBehaviour
     public override void OnStringLoadSuccess(IVRCStringDownload result)
     {
         _captions = result.Result.Split('\n');
+
+        Debug.Log($"Captions loaded: {_captions.Length} entries. Starting slideshow.");
+        // Load the next image. Then do it again, and again, and...
+        LoadNext();
     }
 
     public override void OnStringLoadError(IVRCStringDownload result)
@@ -120,20 +118,26 @@ public class SlideshowFrame : UdonSharpBehaviour
     void CorrectImageSize(Texture2D texture)
     {
         float aspectRatio = (float)texture.width / texture.height;
+        
         Vector3 screenScale = renderer.transform.localScale;
+        float screenAspectRatio = (float)screenScale.x / screenScale.y;
+        Debug.Log($"Correcting image size: {texture.width}x{texture.height}, aspect ratio: {aspectRatio}, screen aspect ratio: {screenAspectRatio}");
 
-        if (aspectRatio > screenScale.x / screenScale.y)    
+        if (aspectRatio > screenAspectRatio || (aspectRatio < 1 && aspectRatio < screenAspectRatio))
         {
-            renderer.sharedMaterial.mainTextureScale = new Vector2(1, screenScale.y*aspectRatio);
-            renderer.sharedMaterial.mainTextureOffset = new Vector2(0, (1 - screenScale.y*aspectRatio) / 2);
+            if (screenAspectRatio < 1)
+                screenAspectRatio = 1;
+
+            renderer.sharedMaterial.mainTextureScale = new Vector2(1, 1 / screenAspectRatio * screenScale.y * aspectRatio);
+            renderer.sharedMaterial.mainTextureOffset = new Vector2(0, (1 - (1 / screenAspectRatio) *screenScale.y * aspectRatio) / 2);
 
         }
         else
         {
-            renderer.sharedMaterial.mainTextureScale = new Vector2((1/aspectRatio)*screenScale.x, 1);
-            renderer.sharedMaterial.mainTextureOffset = new Vector2((1 - (1/aspectRatio)*screenScale.x) / 2, 0);
+            //might need the screen aspect ratio adjustment and if < 1 but it's fine for now
 
-            
+            renderer.sharedMaterial.mainTextureScale = new Vector2((1 / aspectRatio) * screenScale.x, 1);
+            renderer.sharedMaterial.mainTextureOffset = new Vector2((1 - (1 / aspectRatio) * screenScale.x) / 2, 0);
         }
     }
 

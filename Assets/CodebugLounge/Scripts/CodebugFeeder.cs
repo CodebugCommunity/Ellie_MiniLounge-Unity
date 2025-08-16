@@ -7,6 +7,8 @@ using UnityEngine.AI;
 using VRC.SDKBase;
 using VRC.Udon;
 using Random = UnityEngine.Random;
+using VRC.Udon.Common.Interfaces;
+
 
 public class CodebugFeeder : UdonSharpBehaviour
 {
@@ -61,18 +63,40 @@ public class CodebugFeeder : UdonSharpBehaviour
         DisableInteractive = false;
         
     }
-    
-    public override void Interact()
+
+    public void CallCodebugs()
     {
         foreach (NavMeshAgent codebug in codebugs)
         {
             codebug.SetDestination(transform.position);
-            timer = 8;
         }
+        timer = 8;
+    }
+
+    public override void Interact()
+    {
+        SendCustomNetworkEvent(NetworkEventTarget.Owner, nameof(CallCodebugs));
     }
     
     private void Update()
     {
+        if(Networking.GetOwner(gameObject) != Networking.LocalPlayer)
+        {
+            foreach (NavMeshAgent codebug in codebugs)
+            {
+                codebug.enabled = false;
+            }
+
+            return;
+        }else
+        {
+            foreach (NavMeshAgent codebug in codebugs)
+            {
+                codebug.enabled = true;
+            }
+        }
+
+
         for (int i = 0; i < codebugs.Length; i++)
         {
             positions[i] = codebugs[i].gameObject.transform.position;

@@ -3,7 +3,7 @@ using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
-
+using VRC.Udon.Common.Interfaces;
 public class ParticlePlayer : UdonSharpBehaviour
 {
 
@@ -13,9 +13,16 @@ public class ParticlePlayer : UdonSharpBehaviour
         
     }
     
+    public void Fireworks()
+    {
+        if (!particleSystem.isPlaying)
+            particleSystem.Play();
+    }
+
     public override void Interact()
     {
-        if(!particleSystem.isPlaying)
-            particleSystem.Play();
+
+        SendCustomNetworkEvent(NetworkEventTarget.All, nameof(Fireworks));
+
     }
 }

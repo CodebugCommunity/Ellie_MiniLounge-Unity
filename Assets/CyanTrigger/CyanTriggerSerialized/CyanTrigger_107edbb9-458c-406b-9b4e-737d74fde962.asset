@@ -16,13 +16,13 @@ MonoBehaviour:
     type: 2}
   udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
     .export _foodAudioSource\r\n  .export _foodParticleSystem\r\n  .export _foodCollider\r\n 
-    .export _homePosition\r\n  .export _homeRotation\r\n  .export __33_ref_VRCSDK3ComponentsVRCPickup\r\n 
-    .export __34_ref_SystemBoolean\r\n  .export __35_ref_UnityEngineGameObject\r\n 
-    .export __36_ref_SystemBoolean\r\n  .export __39_ref_SystemString\r\n  .export
-    __42_ref_SystemBoolean\r\n  .export __43_ref_SystemString\r\n  .export __49_ref_SystemBoolean\r\n 
-    .export __50_ref_UnityEngineGameObject\r\n  .export __51_ref_SystemBoolean\r\n 
-    .export __52_ref_VRCSDK3ComponentsVRCObjectSync\r\n  .export __54_ref_SystemString\r\n 
-    .export __63_ref_SystemString\r\n  .export __65_ref_SystemString\r\n  __CyanTrigger_ProgramName_SystemString:
+    .export _homePosition\r\n  .export _homeRotation\r\n  .export __31_ref_VRCSDK3ComponentsVRCPickup\r\n 
+    .export __32_ref_SystemBoolean\r\n  .export __33_ref_UnityEngineGameObject\r\n 
+    .export __34_ref_SystemBoolean\r\n  .export __37_ref_SystemString\r\n  .export
+    __40_ref_SystemBoolean\r\n  .export __41_ref_SystemString\r\n  .export __46_ref_SystemBoolean\r\n 
+    .export __47_ref_UnityEngineGameObject\r\n  .export __48_ref_SystemBoolean\r\n 
+    .export __49_ref_VRCSDK3ComponentsVRCObjectSync\r\n  .export __51_ref_SystemString\r\n 
+    .export __59_ref_SystemString\r\n  .export __61_ref_SystemString\r\n  __CyanTrigger_ProgramName_SystemString:
     %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString: %SystemString,
     null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
     %SystemUInt32, null\r\n  __null: %SystemObject, null\r\n  _this_gameobject: %UnityEngineGameObject,
@@ -37,31 +37,28 @@ MonoBehaviour:
     %SystemString, null\r\n  __ag_1_5_SystemBoolean: %SystemBoolean, null\r\n  __ag_1_6_SystemUInt32:
     %SystemUInt32, null\r\n  __ag_1_7_SystemUInt32: %SystemUInt32, null\r\n  __ag_1_8_SystemBoolean:
     %SystemBoolean, null\r\n  __ag_1_9___jump_return_SystemUInt32: %SystemUInt32,
-    null\r\n  __ag_1_10_SystemString: %SystemString, null\r\n  __28___jump_return_1_SystemUInt32:
-    %SystemUInt32, null\r\n  __29_local_var_SystemType: %SystemType, null\r\n  __30_ref_SystemType:
-    %SystemType, null\r\n  __31_const_SystemType: %SystemType, null\r\n  __32___jump_return_2_SystemUInt32:
-    %SystemUInt32, null\r\n  __33_ref_VRCSDK3ComponentsVRCPickup: %VRCSDK3ComponentsVRCPickup,
-    null\r\n  __34_ref_SystemBoolean: %SystemBoolean, null\r\n  __35_ref_UnityEngineGameObject:
-    %UnityEngineGameObject, null\r\n  __36_ref_SystemBoolean: %SystemBoolean, null\r\n 
-    __37_local_var_SystemBoolean: %SystemBoolean, null\r\n  __38_const_SystemBoolean:
-    %SystemBoolean, null\r\n  __39_ref_SystemString: %SystemString, null\r\n  __40___jump_return_3_SystemUInt32:
-    %SystemUInt32, null\r\n  __41_local_var_SystemBoolean: %SystemBoolean, null\r\n 
-    __42_ref_SystemBoolean: %SystemBoolean, null\r\n  __43_ref_SystemString: %SystemString,
-    null\r\n  __44___jump_return_4_SystemUInt32: %SystemUInt32, null\r\n  __45___jump_return_5_SystemUInt32:
-    %SystemUInt32, null\r\n  __46_const_SystemString: %SystemString, null\r\n  __47_const_SystemSingle:
-    %SystemSingle, null\r\n  __48_const_VRCUdonCommonEnumsEventTiming: %VRCUdonCommonEnumsEventTiming,
-    null\r\n  __49_ref_SystemBoolean: %SystemBoolean, null\r\n  __50_ref_UnityEngineGameObject:
-    %UnityEngineGameObject, null\r\n  __51_ref_SystemBoolean: %SystemBoolean, null\r\n 
-    __52_ref_VRCSDK3ComponentsVRCObjectSync: %VRCSDK3ComponentsVRCObjectSync, null\r\n 
-    __53___jump_return_6_SystemUInt32: %SystemUInt32, null\r\n  __54_ref_SystemString:
-    %SystemString, null\r\n  __55___jump_return_7_SystemUInt32: %SystemUInt32, null\r\n 
-    __56_const_SystemUInt32: %SystemUInt32, null\r\n  __57___jump_return_8_SystemUInt32:
-    %SystemUInt32, null\r\n  __58_temp_SystemBoolean: %SystemBoolean, null\r\n  __59_const_SystemString:
-    %SystemString, null\r\n  __60_const_VRCUdonCommonInterfacesNetworkEventTarget:
-    %VRCUdonCommonInterfacesNetworkEventTarget, null\r\n  __61_const_SystemString:
-    %SystemString, null\r\n  __62_const_SystemUInt32: %SystemUInt32, null\r\n  __63_ref_SystemString:
-    %SystemString, null\r\n  __64___jump_return_9_SystemUInt32: %SystemUInt32, null\r\n 
-    __65_ref_SystemString: %SystemString, null\r\n  __66___jump_return_10_SystemUInt32:
+    null\r\n  __ag_1_10_SystemString: %SystemString, null\r\n  __28_local_var_SystemType:
+    %SystemType, null\r\n  __29_ref_SystemType: %SystemType, null\r\n  __30_const_SystemType:
+    %SystemType, null\r\n  __31_ref_VRCSDK3ComponentsVRCPickup: %VRCSDK3ComponentsVRCPickup,
+    null\r\n  __32_ref_SystemBoolean: %SystemBoolean, null\r\n  __33_ref_UnityEngineGameObject:
+    %UnityEngineGameObject, null\r\n  __34_ref_SystemBoolean: %SystemBoolean, null\r\n 
+    __35_local_var_SystemBoolean: %SystemBoolean, null\r\n  __36_const_SystemBoolean:
+    %SystemBoolean, null\r\n  __37_ref_SystemString: %SystemString, null\r\n  __38___jump_return_1_SystemUInt32:
+    %SystemUInt32, null\r\n  __39_local_var_SystemBoolean: %SystemBoolean, null\r\n 
+    __40_ref_SystemBoolean: %SystemBoolean, null\r\n  __41_ref_SystemString: %SystemString,
+    null\r\n  __42___jump_return_2_SystemUInt32: %SystemUInt32, null\r\n  __43_const_SystemString:
+    %SystemString, null\r\n  __44_const_SystemSingle: %SystemSingle, null\r\n  __45_const_VRCUdonCommonEnumsEventTiming:
+    %VRCUdonCommonEnumsEventTiming, null\r\n  __46_ref_SystemBoolean: %SystemBoolean,
+    null\r\n  __47_ref_UnityEngineGameObject: %UnityEngineGameObject, null\r\n  __48_ref_SystemBoolean:
+    %SystemBoolean, null\r\n  __49_ref_VRCSDK3ComponentsVRCObjectSync: %VRCSDK3ComponentsVRCObjectSync,
+    null\r\n  __50___jump_return_3_SystemUInt32: %SystemUInt32, null\r\n  __51_ref_SystemString:
+    %SystemString, null\r\n  __52___jump_return_4_SystemUInt32: %SystemUInt32, null\r\n 
+    __53_const_SystemUInt32: %SystemUInt32, null\r\n  __54_temp_SystemBoolean: %SystemBoolean,
+    null\r\n  __55_const_SystemString: %SystemString, null\r\n  __56_const_VRCUdonCommonInterfacesNetworkEventTarget:
+    %VRCUdonCommonInterfacesNetworkEventTarget, null\r\n  __57_const_SystemString:
+    %SystemString, null\r\n  __58_const_SystemUInt32: %SystemUInt32, null\r\n  __59_ref_SystemString:
+    %SystemString, null\r\n  __60___jump_return_5_SystemUInt32: %SystemUInt32, null\r\n 
+    __61_ref_SystemString: %SystemString, null\r\n  __62___jump_return_6_SystemUInt32:
     %SystemUInt32, null\r\n.data_end\r\n\n.code_start\r\n  .export __ag_0_0\r\n 
     __ag_0_0:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __ag_0_0_SystemString\r\n   
     PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__Log__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
@@ -80,74 +77,62 @@ MonoBehaviour:
     JUMP_INDIRECT, __ag_1_6_SystemUInt32\r\n    JUMP, 0x00000124\r\n    PUSH, __ag_1_10_SystemString\r\n   
     PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
     PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
-    .export _start\r\n  _start:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __28___jump_return_1_SystemUInt32\r\n   
-    JUMP, 0x0000016C\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT,
-    __0_ra_SystemUInt32\r\n\r\n  .export __intern_event_0_debug_execute\r\n  __intern_event_0_debug_execute:\r\n   
-    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __30_ref_SystemType\r\n    PUSH, __29_local_var_SystemType\r\n   
-    COPY\r\n    PUSH, __31_const_SystemType\r\n    PUSH, __29_local_var_SystemType\r\n   
-    COPY\r\n    PUSH, _this_gameobject\r\n    PUSH, __29_local_var_SystemType\r\n   
-    PUSH, _foodCollider\r\n    EXTERN, \"UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent\"\r\n   
+    .export _start\r\n  _start:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __29_ref_SystemType\r\n   
+    PUSH, __28_local_var_SystemType\r\n    COPY\r\n    PUSH, __30_const_SystemType\r\n   
+    PUSH, __28_local_var_SystemType\r\n    COPY\r\n    PUSH, _this_gameobject\r\n   
+    PUSH, __28_local_var_SystemType\r\n    PUSH, _foodCollider\r\n    EXTERN, \"UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent\"\r\n   
     PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
-    .export _Eat\r\n  _Eat:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __32___jump_return_2_SystemUInt32\r\n   
-    JUMP, 0x000001FC\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT,
-    __0_ra_SystemUInt32\r\n\r\n  .export __intern_event_1_debug_execute\r\n  __intern_event_1_debug_execute:\r\n   
-    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __33_ref_VRCSDK3ComponentsVRCPickup\r\n   
+    .export _Eat\r\n  _Eat:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __31_ref_VRCSDK3ComponentsVRCPickup\r\n   
     EXTERN, \"VRCSDK3ComponentsVRCPickup.__Drop__SystemVoid\"\r\n    PUSH, _foodCollider\r\n   
-    PUSH, __34_ref_SystemBoolean\r\n    EXTERN, \"UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid\"\r\n   
-    PUSH, __35_ref_UnityEngineGameObject\r\n    PUSH, __36_ref_SystemBoolean\r\n   
+    PUSH, __32_ref_SystemBoolean\r\n    EXTERN, \"UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid\"\r\n   
+    PUSH, __33_ref_UnityEngineGameObject\r\n    PUSH, __34_ref_SystemBoolean\r\n   
     EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n   
-    PUSH, __38_const_SystemBoolean\r\n    PUSH, __37_local_var_SystemBoolean\r\n   
-    COPY\r\n    PUSH, _foodAudioSource\r\n    PUSH, __37_local_var_SystemBoolean\r\n   
+    PUSH, __36_const_SystemBoolean\r\n    PUSH, __35_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, _foodAudioSource\r\n    PUSH, __35_local_var_SystemBoolean\r\n   
     EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n   
-    PUSH, __37_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000002AC\r\n    PUSH,
+    PUSH, __35_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000254\r\n    PUSH,
     _foodAudioSource\r\n    EXTERN, \"UnityEngineAudioSource.__Play__SystemVoid\"\r\n   
-    PUSH, __39_ref_SystemString\r\n    PUSH, __ag_0_0_SystemString\r\n    COPY\r\n   
-    PUSH, __40___jump_return_3_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH,
-    __38_const_SystemBoolean\r\n    PUSH, __41_local_var_SystemBoolean\r\n    COPY\r\n   
-    PUSH, _foodParticleSystem\r\n    PUSH, __41_local_var_SystemBoolean\r\n    EXTERN,
-    \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n    PUSH, __41_local_var_SystemBoolean\r\n   
-    JUMP_IF_FALSE, 0x00000300\r\n    PUSH, _foodParticleSystem\r\n    PUSH, __42_ref_SystemBoolean\r\n   
+    PUSH, __37_ref_SystemString\r\n    PUSH, __ag_0_0_SystemString\r\n    COPY\r\n   
+    PUSH, __38___jump_return_1_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH,
+    __36_const_SystemBoolean\r\n    PUSH, __39_local_var_SystemBoolean\r\n    COPY\r\n   
+    PUSH, _foodParticleSystem\r\n    PUSH, __39_local_var_SystemBoolean\r\n    EXTERN,
+    \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n    PUSH, __39_local_var_SystemBoolean\r\n   
+    JUMP_IF_FALSE, 0x000002A8\r\n    PUSH, _foodParticleSystem\r\n    PUSH, __40_ref_SystemBoolean\r\n   
     EXTERN, \"UnityEngineParticleSystem.__Play__SystemBoolean__SystemVoid\"\r\n   
-    PUSH, __44___jump_return_4_SystemUInt32\r\n    JUMP, 0x0000032C\r\n    PUSH,
+    PUSH, __42___jump_return_2_SystemUInt32\r\n    JUMP, 0x000002D4\r\n    PUSH,
     __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
     .export _RespawnFood\r\n  _RespawnFood:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
-    PUSH, __45___jump_return_5_SystemUInt32\r\n    JUMP, 0x00000358\r\n    PUSH,
-    __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
-    .export __intern_event_2_debug_execute\r\n  __intern_event_2_debug_execute:\r\n   
-    PUSH, __1_ea_SystemUInt32\r\n    PUSH, _this_udonbehaviour\r\n    PUSH, __46_const_SystemString\r\n   
-    PUSH, __47_const_SystemSingle\r\n    PUSH, __48_const_VRCUdonCommonEnumsEventTiming\r\n   
-    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid\"\r\n   
+    PUSH, _this_udonbehaviour\r\n    PUSH, __43_const_SystemString\r\n    PUSH, __44_const_SystemSingle\r\n   
+    PUSH, __45_const_VRCUdonCommonEnumsEventTiming\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid\"\r\n   
     PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
     .export __intern_event_2_delayed_actions\r\n  __intern_event_2_delayed_actions:\r\n   
-    PUSH, __1_ea_SystemUInt32\r\n    PUSH, _foodCollider\r\n    PUSH, __49_ref_SystemBoolean\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, _foodCollider\r\n    PUSH, __46_ref_SystemBoolean\r\n   
     EXTERN, \"UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid\"\r\n   
-    PUSH, __50_ref_UnityEngineGameObject\r\n    PUSH, __51_ref_SystemBoolean\r\n   
+    PUSH, __47_ref_UnityEngineGameObject\r\n    PUSH, __48_ref_SystemBoolean\r\n   
     EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n   
-    PUSH, __52_ref_VRCSDK3ComponentsVRCObjectSync\r\n    EXTERN, \"VRCSDK3ComponentsVRCObjectSync.__Respawn__SystemVoid\"\r\n   
+    PUSH, __49_ref_VRCSDK3ComponentsVRCObjectSync\r\n    EXTERN, \"VRCSDK3ComponentsVRCObjectSync.__Respawn__SystemVoid\"\r\n   
     PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
     .export _onTriggerEnter\r\n  _onTriggerEnter:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
-    PUSH, __53___jump_return_6_SystemUInt32\r\n    PUSH, __ag_1_6_SystemUInt32\r\n   
-    COPY\r\n    PUSH, __54_ref_SystemString\r\n    PUSH, __ag_1_4_SystemString\r\n   
-    COPY\r\n    PUSH, __55___jump_return_7_SystemUInt32\r\n    JUMP, 0x0000003C\r\n   
-    PUSH, __56_const_SystemUInt32\r\n    PUSH, __ag_1_6_SystemUInt32\r\n    COPY\r\n   
+    PUSH, __50___jump_return_3_SystemUInt32\r\n    PUSH, __ag_1_6_SystemUInt32\r\n   
+    COPY\r\n    PUSH, __51_ref_SystemString\r\n    PUSH, __ag_1_4_SystemString\r\n   
+    COPY\r\n    PUSH, __52___jump_return_4_SystemUInt32\r\n    JUMP, 0x0000003C\r\n   
+    PUSH, __53_const_SystemUInt32\r\n    PUSH, __ag_1_6_SystemUInt32\r\n    COPY\r\n   
     PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
-    __intern_event_3_actions:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __57___jump_return_8_SystemUInt32\r\n   
-    JUMP, 0x0000048C\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT,
-    __0_ra_SystemUInt32\r\n\r\n  .export __intern_event_3_debug_execute\r\n  __intern_event_3_debug_execute:\r\n   
-    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __2_bc_SystemUInt32\r\n    PUSH, __56_const_SystemUInt32\r\n   
-    PUSH, __58_temp_SystemBoolean\r\n    EXTERN, \"SystemUInt32.__op_GreaterThan__SystemUInt32_SystemUInt32__SystemBoolean\"\r\n   
-    PUSH, __58_temp_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000004D4\r\n    PUSH, __59_const_SystemString\r\n   
+    __intern_event_3_actions:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __2_bc_SystemUInt32\r\n   
+    PUSH, __53_const_SystemUInt32\r\n    PUSH, __54_temp_SystemBoolean\r\n    EXTERN,
+    \"SystemUInt32.__op_GreaterThan__SystemUInt32_SystemUInt32__SystemBoolean\"\r\n   
+    PUSH, __54_temp_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000424\r\n    PUSH, __55_const_SystemString\r\n   
     PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
-    PUSH, _this_udonbehaviour\r\n    PUSH, __60_const_VRCUdonCommonInterfacesNetworkEventTarget\r\n   
-    PUSH, __61_const_SystemString\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n   
+    PUSH, _this_udonbehaviour\r\n    PUSH, __56_const_VRCUdonCommonInterfacesNetworkEventTarget\r\n   
+    PUSH, __57_const_SystemString\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n   
     PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
     .export intern_event_3_networked_actions\r\n  intern_event_3_networked_actions:\r\n   
-    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __2_bc_SystemUInt32\r\n    PUSH, __62_const_SystemUInt32\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __2_bc_SystemUInt32\r\n    PUSH, __58_const_SystemUInt32\r\n   
     PUSH, __2_bc_SystemUInt32\r\n    EXTERN, \"SystemUInt32.__op_Addition__SystemUInt32_SystemUInt32__SystemUInt32\"\r\n   
-    PUSH, __63_ref_SystemString\r\n    PUSH, __ag_0_0_SystemString\r\n    COPY\r\n   
-    PUSH, __64___jump_return_9_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH,
-    __66___jump_return_10_SystemUInt32\r\n    JUMP, 0x000001D0\r\n    PUSH, __2_bc_SystemUInt32\r\n   
-    PUSH, __62_const_SystemUInt32\r\n    PUSH, __2_bc_SystemUInt32\r\n    EXTERN,
+    PUSH, __59_ref_SystemString\r\n    PUSH, __ag_0_0_SystemString\r\n    COPY\r\n   
+    PUSH, __60___jump_return_5_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH,
+    __62___jump_return_6_SystemUInt32\r\n    JUMP, 0x000001A4\r\n    PUSH, __2_bc_SystemUInt32\r\n   
+    PUSH, __58_const_SystemUInt32\r\n    PUSH, __2_bc_SystemUInt32\r\n    EXTERN,
     \"SystemUInt32.__op_Subtraction__SystemUInt32_SystemUInt32__SystemUInt32\"\r\n   
     PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
   assemblyError: 
@@ -807,14 +792,14 @@ MonoBehaviour:
     ignoreEventWarnings: 0
   publicVariableReferences:
     actionDataIndices:
-    - symbolName: __30_ref_SystemType
+    - symbolName: __29_ref_SystemType
       type:
         typeDef: System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       eventIndex: 0
       actionIndex: 0
       variableIndex: 0
       multiVariableIndex: -1
-    - symbolName: __33_ref_VRCSDK3ComponentsVRCPickup
+    - symbolName: __31_ref_VRCSDK3ComponentsVRCPickup
       type:
         typeDef: VRC.SDK3.Components.VRCPickup, VRCSDK3, Version=1.0.0.0, Culture=neutral,
           PublicKeyToken=null
@@ -822,14 +807,14 @@ MonoBehaviour:
       actionIndex: 0
       variableIndex: 0
       multiVariableIndex: 0
-    - symbolName: __34_ref_SystemBoolean
+    - symbolName: __32_ref_SystemBoolean
       type:
         typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       eventIndex: 1
       actionIndex: 1
       variableIndex: 1
       multiVariableIndex: -1
-    - symbolName: __35_ref_UnityEngineGameObject
+    - symbolName: __33_ref_UnityEngineGameObject
       type:
         typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
@@ -837,42 +822,42 @@ MonoBehaviour:
       actionIndex: 2
       variableIndex: 0
       multiVariableIndex: 0
-    - symbolName: __36_ref_SystemBoolean
+    - symbolName: __34_ref_SystemBoolean
       type:
         typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       eventIndex: 1
       actionIndex: 2
       variableIndex: 1
       multiVariableIndex: -1
-    - symbolName: __39_ref_SystemString
+    - symbolName: __37_ref_SystemString
       type:
         typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       eventIndex: 1
       actionIndex: 9
       variableIndex: 0
       multiVariableIndex: -1
-    - symbolName: __42_ref_SystemBoolean
+    - symbolName: __40_ref_SystemBoolean
       type:
         typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       eventIndex: 1
       actionIndex: 17
       variableIndex: 1
       multiVariableIndex: -1
-    - symbolName: __43_ref_SystemString
+    - symbolName: __41_ref_SystemString
       type:
         typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       eventIndex: 1
       actionIndex: 20
       variableIndex: 1
       multiVariableIndex: -1
-    - symbolName: __49_ref_SystemBoolean
+    - symbolName: __46_ref_SystemBoolean
       type:
         typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       eventIndex: 2
       actionIndex: 0
       variableIndex: 1
       multiVariableIndex: -1
-    - symbolName: __50_ref_UnityEngineGameObject
+    - symbolName: __47_ref_UnityEngineGameObject
       type:
         typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
@@ -880,14 +865,14 @@ MonoBehaviour:
       actionIndex: 1
       variableIndex: 0
       multiVariableIndex: 0
-    - symbolName: __51_ref_SystemBoolean
+    - symbolName: __48_ref_SystemBoolean
       type:
         typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       eventIndex: 2
       actionIndex: 1
       variableIndex: 1
       multiVariableIndex: -1
-    - symbolName: __52_ref_VRCSDK3ComponentsVRCObjectSync
+    - symbolName: __49_ref_VRCSDK3ComponentsVRCObjectSync
       type:
         typeDef: VRC.SDK3.Components.VRCObjectSync, VRCSDK3, Version=1.0.0.0, Culture=neutral,
           PublicKeyToken=null
@@ -895,21 +880,21 @@ MonoBehaviour:
       actionIndex: 2
       variableIndex: 0
       multiVariableIndex: 0
-    - symbolName: __54_ref_SystemString
+    - symbolName: __51_ref_SystemString
       type:
         typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       eventIndex: 3
       actionIndex: -1
       variableIndex: 0
       multiVariableIndex: 0
-    - symbolName: __63_ref_SystemString
+    - symbolName: __59_ref_SystemString
       type:
         typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       eventIndex: 3
       actionIndex: 0
       variableIndex: 0
       multiVariableIndex: -1
-    - symbolName: __65_ref_SystemString
+    - symbolName: __61_ref_SystemString
       type:
         typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       eventIndex: 3
