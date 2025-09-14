@@ -194,7 +194,7 @@ Material:
     - _HalftoneType: 3
     - _Hue: 0
     - _IOR: 0
-    - _LayerCount: 3
+    - _LayerCount: 1
     - _MatcapTintToDiffuse: 0
     - _Metallic: 0
     - _Mode: 0

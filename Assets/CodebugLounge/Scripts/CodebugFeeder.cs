@@ -26,17 +26,6 @@ public class CodebugFeeder : UdonSharpBehaviour
     
     float timer = 0;
     float timerTransit = 0;
-
-    private void Awake()
-    {
-        
-        for (int i = 0; i < codebugs.Length; i++)
-        {
-            codebugStates[i] = GetClosestState(codebugs[i].gameObject.transform.position);
-        }
-
-        grassMaterial = grassRenderers[0].material;
-    }
     
     private CodebugState GetClosestState(Vector3 position)
     {
@@ -55,12 +44,23 @@ public class CodebugFeeder : UdonSharpBehaviour
 
         return (CodebugState)closestIndex;
     }
-    
-    
+
+
     void Start()
     {
         InteractionText = "Feed Codebugs";
         DisableInteractive = false;
+        
+        if(Networking.IsOwner(Networking.LocalPlayer, gameObject))
+        {
+            for (int i = 0; i < codebugs.Length; i++)
+            {
+                codebugStates[i] = GetClosestState(codebugs[i].gameObject.transform.position);
+            }
+        }
+        
+
+        grassMaterial = grassRenderers[0].material;
         
     }
 
@@ -73,6 +73,17 @@ public class CodebugFeeder : UdonSharpBehaviour
         timer = 8;
     }
 
+    public override void OnOwnershipTransferred(VRCPlayerApi newOwner)
+    {
+        if(Networking.IsOwner(Networking.LocalPlayer, gameObject))
+        {
+            for (int i = 0; i < codebugs.Length; i++)
+            {
+                codebugStates[i] = GetClosestState(codebugs[i].gameObject.transform.position);
+            }
+        }
+    }
+
     public override void Interact()
     {
         SendCustomNetworkEvent(NetworkEventTarget.Owner, nameof(CallCodebugs));
@@ -80,21 +91,6 @@ public class CodebugFeeder : UdonSharpBehaviour
     
     private void Update()
     {
-        if(Networking.GetOwner(gameObject) != Networking.LocalPlayer)
-        {
-            foreach (NavMeshAgent codebug in codebugs)
-            {
-                codebug.enabled = false;
-            }
-
-            return;
-        }else
-        {
-            foreach (NavMeshAgent codebug in codebugs)
-            {
-                codebug.enabled = true;
-            }
-        }
 
 
         for (int i = 0; i < codebugs.Length; i++)
@@ -106,6 +102,27 @@ public class CodebugFeeder : UdonSharpBehaviour
         {
             renderer.material.SetVectorArray("_PlayerPositions", positions);
         }
+
+
+        if (!Networking.IsOwner(Networking.LocalPlayer, gameObject))
+        {
+            foreach (NavMeshAgent codebug in codebugs)
+            {
+                codebug.enabled = false;
+            }
+
+            return;
+        }
+        else
+        {
+            foreach (NavMeshAgent codebug in codebugs)
+            {
+                codebug.enabled = true;
+            }
+        }
+
+
+       
         
         
         

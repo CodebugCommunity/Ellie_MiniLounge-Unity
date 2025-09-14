@@ -52,6 +52,12 @@ public class SlideshowFrame : UdonSharpBehaviour
     
     public void LoadNext()
     {
+        // Safety check: ensure arrays are initialized and have content
+        if (imageUrls == null || imageUrls.Length == 0 || _downloadedTextures == null)
+        {
+            Debug.LogError("SlideshowFrame: Arrays not properly initialized");
+            return;
+        }
     
         // All clients share the same server time. That's used to sync the currently displayed image.
         _loadedIndex = (int)(Networking.GetServerTimeInMilliseconds() / 1000f / slideDurationSeconds) % imageUrls.Length;
@@ -105,7 +111,7 @@ public class SlideshowFrame : UdonSharpBehaviour
 
     public override void OnImageLoadSuccess(IVRCImageDownload result)
     {
-        Debug.Log($"Image loaded: {result.SizeInMemoryBytes} bytes.");
+        //Debug.Log($"Image loaded: {result.SizeInMemoryBytes} bytes.");
         
         _downloadedTextures[_loadedIndex] = result.Result;
         
@@ -121,7 +127,7 @@ public class SlideshowFrame : UdonSharpBehaviour
         
         Vector3 screenScale = renderer.transform.localScale;
         float screenAspectRatio = (float)screenScale.x / screenScale.y;
-        Debug.Log($"Correcting image size: {texture.width}x{texture.height}, aspect ratio: {aspectRatio}, screen aspect ratio: {screenAspectRatio}");
+        //Debug.Log($"Correcting image size: {texture.width}x{texture.height}, aspect ratio: {aspectRatio}, screen aspect ratio: {screenAspectRatio}");
 
         if (aspectRatio > screenAspectRatio || (aspectRatio < 1 && aspectRatio < screenAspectRatio))
         {
