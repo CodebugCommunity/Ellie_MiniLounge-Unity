@@ -4,6 +4,9 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 using VRCStation = VRC.SDK3.Components.VRCStation;
+using System.Runtime.Remoting.Messaging;
+
+
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -55,12 +58,12 @@ public class EventButtonEditor : Editor
 
 public class FactorySwitch : UdonSharpBehaviour
 {
-    
+
     public bool state = false;
     Transform switchTransform;
-    
+
     public Collider[] ObjectsToToggle;
-    
+
     public override void Interact()
     {
         state = !state;
@@ -71,15 +74,15 @@ public class FactorySwitch : UdonSharpBehaviour
             {
                 o.enabled = state;
             }
-            
+
         }
     }
-    
+
     void UpdateVisuals()
     {
-        switchTransform.localRotation = Quaternion.Euler(state ? -90 : 90, 0,0);
+        switchTransform.localRotation = Quaternion.Euler(state ? -90 : 90, 0, 0);
     }
-    
+
     void Start()
     {
         switchTransform = transform.GetChild(1);
