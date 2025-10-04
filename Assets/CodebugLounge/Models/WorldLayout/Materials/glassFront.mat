@@ -170,7 +170,7 @@ Material:
     - _RippleSize: 6
     - _RippleSpeed: 10
     - _RippleStrength: 1
-    - _Roughness: 0.088
+    - _Roughness: 0.08
     - _Rows: 8
     - _SamplingMode: 0
     - _Smoothness: 0

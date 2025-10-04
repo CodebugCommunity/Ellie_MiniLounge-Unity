@@ -12,6 +12,9 @@ using VRC.Udon.Common.Interfaces;
 
 public class CodebugFeeder : UdonSharpBehaviour
 {
+
+    [SerializeField] ParticleSystem pelletParticles;
+
     [SerializeField] NavMeshAgent[] codebugs;
 
     [SerializeField] Transform[] randomCenters;
@@ -70,6 +73,7 @@ public class CodebugFeeder : UdonSharpBehaviour
         {
             codebug.SetDestination(transform.position);
         }
+        pelletParticles.Play();
         timer = 8;
     }
 

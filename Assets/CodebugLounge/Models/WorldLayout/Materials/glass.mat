@@ -158,7 +158,7 @@ Material:
     - _IgnoreEffects: 0
     - _LitBaseColor: 1
     - _MaterialResetCheck: 1
-    - _Metallic: 0.108
+    - _Metallic: 0.023
     - _Mode: 3
     - _NormalStrength: 1
     - _Occlusion: 1
