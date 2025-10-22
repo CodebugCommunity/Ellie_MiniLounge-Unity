@@ -7,6 +7,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: IPN
+    second: {fileID: 2100000, guid: 6bc7af68e5d20154e9168339b474ae7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IPN.001
+    second: {fileID: 2100000, guid: bda867e2c4f212d44a110b2e04b164dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: IPN.002
     second: {fileID: 2100000, guid: 6a5b00a7e085df045ab235f2049a76ff, type: 2}
   - first:
@@ -164,6 +174,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: glass.001
     second: {fileID: 2100000, guid: b45e9eec3a140034aa4b48230816be77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grid.001
+    second: {fileID: 2100000, guid: 019329bd4e6860d4d86bad6212b55138, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

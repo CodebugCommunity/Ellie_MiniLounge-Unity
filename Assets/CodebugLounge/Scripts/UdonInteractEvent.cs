@@ -17,11 +17,11 @@ public class UdonInteractEvent : UdonSharpBehaviour
     {
         isMuted = state;
     }
-    public override void OnPickupUseDown()
-    {
-        SendCustomNetworkEvent(NetworkEventTarget.All, nameof(GaleKiss));
-        Debug.Log("OnPickupUseDownGale");
-    }
+    //public override void OnPickupUseDown()
+    //{
+    //    SendCustomNetworkEvent(NetworkEventTarget.All, nameof(GaleKiss));
+    //    Debug.Log("OnPickupUseDownGale");
+    //}
     public override void Interact()
     {
         Networking.SetOwner(Networking.LocalPlayer, gameObject);

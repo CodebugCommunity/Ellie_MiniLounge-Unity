@@ -58,9 +58,11 @@ public class SlideshowFrame : UdonSharpBehaviour
             Debug.LogError("SlideshowFrame: Arrays not properly initialized");
             return;
         }
-    
+
         // All clients share the same server time. That's used to sync the currently displayed image.
         _loadedIndex = (int)(Networking.GetServerTimeInMilliseconds() / 1000f / slideDurationSeconds) % imageUrls.Length;
+        
+        Debug.Log($"Loading image index {_loadedIndex}");
 
         var nextTexture = _downloadedTextures[_loadedIndex];
         
