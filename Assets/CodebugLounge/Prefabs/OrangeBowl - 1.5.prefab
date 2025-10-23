@@ -69,7 +69,7 @@ MeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 2947560186881495840}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 5
+  m_ScaleInLightmap: 30
   m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
@@ -153,7 +153,7 @@ MeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 2947560186881495840}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 5
+  m_ScaleInLightmap: 30
   m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
@@ -660,7 +660,7 @@ PrefabInstance:
     - target: {fileID: -4791300549530949414, guid: 49520f2622fd86b42ac2e6bf9a5a7a87,
         type: 3}
       propertyPath: m_ScaleInLightmap
-      value: 5
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -4791300549530949414, guid: 49520f2622fd86b42ac2e6bf9a5a7a87,
         type: 3}
@@ -747,6 +747,11 @@ PrefabInstance:
       propertyPath: m_ProbeAnchor
       value: 
       objectReference: {fileID: 2947560186881495840}
+    - target: {fileID: -804731622281664130, guid: 49520f2622fd86b42ac2e6bf9a5a7a87,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: -804731622281664130, guid: 49520f2622fd86b42ac2e6bf9a5a7a87,
         type: 3}
       propertyPath: m_ReflectionProbeUsage

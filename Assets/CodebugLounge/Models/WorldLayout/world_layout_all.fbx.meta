@@ -107,6 +107,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: brushed_concrete.001
+    second: {fileID: 2100000, guid: 3b1e5a2f44945294c9dad77dd5759867, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: building
     second: {fileID: 2100000, guid: 29382c982f26e7449a7c383415643a25, type: 2}
   - first:
