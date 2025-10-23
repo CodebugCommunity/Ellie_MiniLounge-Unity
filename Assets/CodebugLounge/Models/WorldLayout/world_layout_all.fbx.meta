@@ -97,6 +97,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: brown_mud_02.001
+    second: {fileID: 2100000, guid: 08d4978f634851343bb109e5847ea54e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: brushed_concrete
     second: {fileID: 2100000, guid: 0c36f578baf8c714ba89a1cc6ec4cbe2, type: 2}
   - first:
@@ -159,6 +164,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: dark_wood.004
     second: {fileID: 2100000, guid: 1ddea3552f308de4fbe0b895849ad8f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark_wooden_planks
+    second: {fileID: 2100000, guid: 5cb8c2829388dbe42a79c892ddd42c3f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
