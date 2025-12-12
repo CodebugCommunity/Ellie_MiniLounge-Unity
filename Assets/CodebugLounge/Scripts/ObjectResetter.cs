@@ -3,6 +3,7 @@ using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
+using VRC.Udon.Common.Interfaces;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -60,6 +61,11 @@ public class ObjectResetter : UdonSharpBehaviour
     }
     
     public override void Interact()
+    {
+        SendCustomNetworkEvent(NetworkEventTarget.All, nameof(ResetObjects));   
+    }
+
+    void ResetObjects()
     {
         for (int i = 0; i < objectsToReset.Length; i++)
         {

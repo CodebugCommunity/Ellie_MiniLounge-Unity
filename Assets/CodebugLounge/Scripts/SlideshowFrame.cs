@@ -30,13 +30,41 @@ public class SlideshowFrame : UdonSharpBehaviour
     private IUdonEventReceiver _udonEventReceiver;
     private string[] _captions = new string[0];
     private Texture2D[] _downloadedTextures;
+    private Material _targetMaterial;
+    private TextureInfo _textureInfo;
     
     
     
     private void Start()
     {
+        if (renderer == null)
+        {
+            Debug.LogError("SlideshowFrame: Renderer reference is missing.");
+            return;
+        }
+
+        if (slideDurationSeconds <= 0f)
+        {
+            Debug.LogWarning("SlideshowFrame: slideDurationSeconds must be > 0. Defaulting to 10 seconds.");
+            slideDurationSeconds = 10f;
+        }
+
+        if (imageUrls == null || imageUrls.Length == 0)
+        {
+            Debug.LogError("SlideshowFrame: No image URLs assigned.");
+            return;
+        }
+
         // Downloaded textures will be cached in a texture array.
         _downloadedTextures = new Texture2D[imageUrls.Length];
+
+        // Use a consistent material instance (avoid mixing sharedMaterial and material).
+        _targetMaterial = renderer.material;
+
+        _textureInfo = new TextureInfo();
+        _textureInfo.GenerateMipMaps = true;
+        _textureInfo.WrapModeV = TextureWrapMode.Clamp;
+        _textureInfo.WrapModeU = TextureWrapMode.Clamp;
         
         // It's important to store the VRCImageDownloader as a variable, to stop it from being garbage collected!
         _imageDownloader = new VRCImageDownloader();
@@ -44,8 +72,17 @@ public class SlideshowFrame : UdonSharpBehaviour
         // To receive Image and String loading events, 'this' is casted to the type needed
         _udonEventReceiver = (IUdonEventReceiver)this;
         
-        // Captions are downloaded once. On success, OnImageLoadSuccess() will be called.
-        VRCStringDownloader.LoadUrl(stringUrl, _udonEventReceiver);
+        // Captions are downloaded once. On success, OnStringLoadSuccess() will be called.
+        // If it fails, we still start the slideshow without captions.
+        if (stringUrl != null && stringUrl.Get() != null && stringUrl.Get().Length > 0)
+        {
+            VRCStringDownloader.LoadUrl(stringUrl, _udonEventReceiver);
+        }
+        else
+        {
+            Debug.LogWarning("SlideshowFrame: Caption URL is empty. Starting slideshow without captions.");
+            LoadNext();
+        }
         
        
     }
@@ -53,10 +90,15 @@ public class SlideshowFrame : UdonSharpBehaviour
     public void LoadNext()
     {
         // Safety check: ensure arrays are initialized and have content
-        if (imageUrls == null || imageUrls.Length == 0 || _downloadedTextures == null)
+        if (renderer == null || imageUrls == null || imageUrls.Length == 0 || _downloadedTextures == null)
         {
             Debug.LogError("SlideshowFrame: Arrays not properly initialized");
             return;
+        }
+
+        if (_targetMaterial == null)
+        {
+            _targetMaterial = renderer.material;
         }
 
         // All clients share the same server time. That's used to sync the currently displayed image.
@@ -69,7 +111,7 @@ public class SlideshowFrame : UdonSharpBehaviour
         if (nextTexture != null)
         {
             // Image already downloaded! No need to download it again.
-            renderer.sharedMaterial.mainTexture = nextTexture;
+            _targetMaterial.mainTexture = nextTexture;
             CorrectImageSize(nextTexture);
             
             UpdateCaptionText();
@@ -77,16 +119,17 @@ public class SlideshowFrame : UdonSharpBehaviour
         }
         else
         {
-            var rgbInfo = new TextureInfo();
-            rgbInfo.GenerateMipMaps = true;
-            rgbInfo.WrapModeV = TextureWrapMode.Clamp;
-            rgbInfo.WrapModeU = TextureWrapMode.Clamp;
-            _imageDownloader.DownloadImage(imageUrls[_loadedIndex], renderer.material, _udonEventReceiver, rgbInfo);
+            _imageDownloader.DownloadImage(imageUrls[_loadedIndex], _targetMaterial, _udonEventReceiver, _textureInfo);
         }
     }
 
     private void UpdateCaptionText()
     {
+        if (field == null)
+        {
+            return;
+        }
+
         if (_loadedIndex < _captions.Length)
         {
             field.text = _captions[_loadedIndex];
@@ -99,7 +142,7 @@ public class SlideshowFrame : UdonSharpBehaviour
 
     public override void OnStringLoadSuccess(IVRCStringDownload result)
     {
-        _captions = result.Result.Split('\n');
+        _captions = result.Result.Replace("\r", "").Split('\n');
 
         Debug.Log($"Captions loaded: {_captions.Length} entries. Starting slideshow.");
         // Load the next image. Then do it again, and again, and...
@@ -109,13 +152,19 @@ public class SlideshowFrame : UdonSharpBehaviour
     public override void OnStringLoadError(IVRCStringDownload result)
     {
         Debug.LogError($"Could not load string {result.Error}");
+
+        // Still warn + start slideshow (captions will remain empty).
+        LoadNext();
     }
 
     public override void OnImageLoadSuccess(IVRCImageDownload result)
     {
         //Debug.Log($"Image loaded: {result.SizeInMemoryBytes} bytes.");
         
-        _downloadedTextures[_loadedIndex] = result.Result;
+        if (_loadedIndex >= 0 && _loadedIndex < _downloadedTextures.Length)
+        {
+            _downloadedTextures[_loadedIndex] = result.Result;
+        }
         
         CorrectImageSize(result.Result);
         
@@ -125,6 +174,11 @@ public class SlideshowFrame : UdonSharpBehaviour
     
     void CorrectImageSize(Texture2D texture)
     {
+        if (_targetMaterial == null)
+        {
+            return;
+        }
+
         float aspectRatio = (float)texture.width / texture.height;
         
         Vector3 screenScale = renderer.transform.localScale;
@@ -136,26 +190,32 @@ public class SlideshowFrame : UdonSharpBehaviour
             if (screenAspectRatio < 1)
                 screenAspectRatio = 1;
 
-            renderer.sharedMaterial.mainTextureScale = new Vector2(1, 1 / screenAspectRatio * screenScale.y * aspectRatio);
-            renderer.sharedMaterial.mainTextureOffset = new Vector2(0, (1 - (1 / screenAspectRatio) *screenScale.y * aspectRatio) / 2);
+            _targetMaterial.mainTextureScale = new Vector2(1, 1 / screenAspectRatio * screenScale.y * aspectRatio);
+            _targetMaterial.mainTextureOffset = new Vector2(0, (1 - (1 / screenAspectRatio) *screenScale.y * aspectRatio) / 2);
 
         }
         else
         {
             //might need the screen aspect ratio adjustment and if < 1 but it's fine for now
 
-            renderer.sharedMaterial.mainTextureScale = new Vector2((1 / aspectRatio) * screenScale.x, 1);
-            renderer.sharedMaterial.mainTextureOffset = new Vector2((1 - (1 / aspectRatio) * screenScale.x) / 2, 0);
+            _targetMaterial.mainTextureScale = new Vector2((1 / aspectRatio) * screenScale.x, 1);
+            _targetMaterial.mainTextureOffset = new Vector2((1 - (1 / aspectRatio) * screenScale.x) / 2, 0);
         }
     }
 
     public override void OnImageLoadError(IVRCImageDownload result)
     {
         Debug.Log($"Image not loaded: {result.Error.ToString()}: {result.ErrorMessage}.");
+
+        // Don't stall the slideshow forever on a failed image.
+        SendCustomEventDelayedSeconds(nameof(LoadNext), 1f);
     }
 
     private void OnDestroy()
     {
-        _imageDownloader.Dispose();
+        if (_imageDownloader != null)
+        {
+            _imageDownloader.Dispose();
+        }
     }
 }

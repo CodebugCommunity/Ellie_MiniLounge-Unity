@@ -33,7 +33,27 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: aluminium
-    second: {fileID: 2100000, guid: 410764e7659a537409b135df7d9bcfb1, type: 2}
+    second: {fileID: 2100000, guid: 3c377a816abab4d4bb19b8da66c83300, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aluminium.001
+    second: {fileID: 2100000, guid: b24306b3609d64e41b572bc9c3274d94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aluminium.002
+    second: {fileID: 2100000, guid: f77e2b233c50f444cac55b68479a62f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aluminium.004
+    second: {fileID: 2100000, guid: 51f46297dc1d5b844a8aeb4758a9b32b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aluminium_shell
+    second: {fileID: 2100000, guid: 5e5fc566df5b3194b977dc741377874f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -182,6 +202,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: flower_ursinia.001
+    second: {fileID: 2100000, guid: e30796c0180742e48988e1943bdb8e1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flower_ursinia.002
+    second: {fileID: 2100000, guid: f187ea91182c8fb46a2fe96ec2bfe3c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: glass
     second: {fileID: 2100000, guid: 95a0c868bed168544848b1094dbaf6cf, type: 2}
   - first:
@@ -264,6 +294,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: orange_flower.emissive
     second: {fileID: 2100000, guid: 7b30a868cc491f44f88ae74b57767d50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: potted_plant_01_leaves
+    second: {fileID: 2100000, guid: 0e312de93637a064ca51f85d699aa29c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
