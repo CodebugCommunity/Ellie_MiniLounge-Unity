@@ -152,6 +152,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: cloth
+    second: {fileID: 2100000, guid: b5537962bb5f63441a813ddb9fecfd7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: concrete
     second: {fileID: 2100000, guid: 991b4270a4fb63f4682d588fa65441ec, type: 2}
   - first:

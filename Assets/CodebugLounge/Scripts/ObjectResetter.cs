@@ -5,6 +5,7 @@ using VRC.SDKBase;
 using VRC.Udon;
 using VRC.Udon.Common.Interfaces;
 
+
 #if UNITY_EDITOR
 using UnityEditor;
 using VRC.SDK3.Components;
@@ -26,18 +27,26 @@ public class ObjectResetterEditor : Editor
 
         if (GUILayout.Button("Update seats"))
         {
-            
+            Undo.RecordObject(resetter, "Update seats");
             
             var interactables = GameObject.FindObjectsByType<VRCPickup>(FindObjectsSortMode.None);
-            GameObject[] interactableObjs= new GameObject[interactables.Length];
-            for (int i = 0; i < interactables.Length; i++)
+            int count = interactables.Length;
+            GameObject[] interactableObjs = new GameObject[count];
+            Vector3[] positions = new Vector3[count];
+            Quaternion[] rotations = new Quaternion[count];
+
+            for (int i = 0; i < count; i++)
             {
                 interactableObjs[i] = interactables[i].gameObject;
+                positions[i] = interactables[i].transform.position;
+                rotations[i] = interactables[i].transform.rotation;
             }
             
             resetter.objectsToReset = interactableObjs;
+            resetter.startingPositions = positions;
+            resetter.startingRotations = rotations;
             
-            
+            EditorUtility.SetDirty(resetter);
         }
     }
 }
@@ -46,27 +55,17 @@ public class ObjectResetterEditor : Editor
 public class ObjectResetter : UdonSharpBehaviour
 {
     [SerializeField] public GameObject[] objectsToReset;
-    [SerializeField] private Vector3[] startingPositions;
-    [SerializeField] private Quaternion[] startingRotations;
-    void Awake()
-    {
-        startingPositions = new Vector3[objectsToReset.Length];
-        startingRotations = new Quaternion[objectsToReset.Length];
-        
-        for (int i = 0; i < objectsToReset.Length; i++)
-        {
-            startingPositions[i] = objectsToReset[i].transform.position;
-            startingRotations[i] = objectsToReset[i].transform.rotation;
-        }
-    }
+    [SerializeField] public Vector3[] startingPositions;
+    [SerializeField] public Quaternion[] startingRotations;
     
     public override void Interact()
     {
         SendCustomNetworkEvent(NetworkEventTarget.All, nameof(ResetObjects));   
+        Debug.Log("0Reset objects to starting positions and rotations.");
     }
-
-    void ResetObjects()
+    public void ResetObjects()
     {
+        Debug.Log("1Reset objects to starting positions and rotations.");
         for (int i = 0; i < objectsToReset.Length; i++)
         {
             objectsToReset[i].transform.position = startingPositions[i];

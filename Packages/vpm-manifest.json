@@ -6,20 +6,17 @@
     "com.emymin.emychess": {
       "version": "0.1.3"
     },
-    "com.cyan.cyantrigger": {
-      "version": "4.4.3"
-    },
     "com.z3y.vrcmarker": {
       "version": "2.4.0"
     },
-    "com.vrchat.base": {
-      "version": "3.7.6"
-    },
-    "dev.onevr.vrworldtoolkit": {
-      "version": "3.2.1"
-    },
     "com.llealloo.audiolink": {
       "version": "2.1.0"
+    },
+    "com.cyan.cyantrigger": {
+      "version": "4.4.5"
+    },
+    "dev.onevr.vrworldtoolkit": {
+      "version": "3.3.2"
     },
     "com.vrchat.worlds": {
       "version": "3.7.6"
@@ -34,26 +31,22 @@
       "version": "0.1.3",
       "dependencies": {}
     },
-    "com.cyan.cyantrigger": {
-      "version": "4.4.3",
-      "dependencies": {
-        "com.vrchat.worlds": "^3.1.x"
-      }
-    },
     "com.z3y.vrcmarker": {
       "version": "2.4.0",
       "dependencies": {}
     },
-    "com.vrchat.base": {
-      "version": "3.7.6",
-      "dependencies": {}
-    },
-    "dev.onevr.vrworldtoolkit": {
-      "version": "3.2.1",
-      "dependencies": {}
-    },
     "com.llealloo.audiolink": {
       "version": "2.1.0",
+      "dependencies": {}
+    },
+    "com.cyan.cyantrigger": {
+      "version": "4.4.5",
+      "dependencies": {
+        "com.vrchat.worlds": "^3.1.x"
+      }
+    },
+    "dev.onevr.vrworldtoolkit": {
+      "version": "3.3.2",
       "dependencies": {}
     },
     "com.vrchat.worlds": {
@@ -61,6 +54,10 @@
       "dependencies": {
         "com.vrchat.base": "3.7.6"
       }
+    },
+    "com.vrchat.base": {
+      "version": "3.7.6",
+      "dependencies": {}
     }
   }
 }

@@ -28,12 +28,12 @@ public class BeansController : UdonSharpBehaviour
         
     }
 
-    void DisableLid()
+    public void DisableLid()
     {
         ObjectToToggle.SetActive(false);
     }
 
-    void EnableLid()
+    public void EnableLid()
     {
         ObjectToToggle.SetActive(true);
     }
