@@ -172,7 +172,7 @@ Material:
     - _EmissionToDiffuse: 0
     - _FadeDither: 0
     - _FadeDitherDistance: 0
-    - _FurLength: 1
+    - _FurLength: 0.407
     - _FurOcclusion: 0.5
     - _FurWidth: 0.65
     - _GlossMapScale: 1
@@ -186,7 +186,7 @@ Material:
     - _HalftoneType: 3
     - _Hue: 0
     - _IOR: 0
-    - _LayerCount: 1
+    - _LayerCount: 8
     - _MatcapTintToDiffuse: 0
     - _Metallic: 0
     - _Mode: 0

@@ -178,7 +178,7 @@ Material:
     - _FadeDither: 0
     - _FadeDitherDistance: 0
     - _FurDensity: 0.21
-    - _FurLength: 1
+    - _FurLength: 0.579
     - _FurOcclusion: 0.5
     - _FurShading: 0.25
     - _FurThinness: 0.33
@@ -194,7 +194,7 @@ Material:
     - _HalftoneType: 3
     - _Hue: 0
     - _IOR: 0
-    - _LayerCount: 3
+    - _LayerCount: 8
     - _MatcapTintToDiffuse: 0
     - _Metallic: 0
     - _Mode: 0
@@ -243,7 +243,7 @@ Material:
     - _Stencil: 0
     - _StencilComp: 0
     - _StencilOp: 0
-    - _StrandAmount: 20
+    - _StrandAmount: 50
     - _TilingMode: 0
     - _UVDiscardChannel: 0
     - _UVDiscardMode: 0
