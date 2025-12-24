@@ -327,6 +327,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: tiled_building
+    second: {fileID: 2100000, guid: f3bce1c4bf110eb44b0ab18bfa1e358a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tiled_building_green
+    second: {fileID: 2100000, guid: 4f53a7d5fd73db0479ef58408ecf12a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: world_base
     second: {fileID: 2100000, guid: 8607d387e1012344098ad6f99bb258d3, type: 2}
   - first:

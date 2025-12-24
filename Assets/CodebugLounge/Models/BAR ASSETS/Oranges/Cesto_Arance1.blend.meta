@@ -3,7 +3,22 @@ guid: 49520f2622fd86b42ac2e6bf9a5a7a87
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arancia
+    second: {fileID: 2100000, guid: 400836e4f2972a04a9e654c3c5d3ffd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cesta_Arance
+    second: {fileID: 2100000, guid: d198aced0b267d64aaadf6ec17ed8c29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Verde
+    second: {fileID: 2100000, guid: b583a62b5799fdb48954d82d55a26840, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

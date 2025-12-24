@@ -17,7 +17,7 @@ public class RugSwitch : UdonSharpBehaviour
         UpdateVisuals();
         foreach (var o in ObjectsToToggle)
         {
-            o.sharedMaterial.SetFloat("_LayerCount", state ? 8 : 1);
+            o.sharedMaterial.SetFloat("_LayerCount", state ? 4 : 1);
         }
     }
     

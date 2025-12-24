@@ -29,6 +29,9 @@
 - https://github.com/MarekMarchlewicz/Painting/tree/master
 - https://github.com/z3y/VRCMarker
 - https://fionna.booth.pm/items/3203358
+- https://booth.pm/en/items/3864886
+- https://booth.pm/ja/items/3784597
+
 
 
 ## External assets used:
@@ -53,3 +56,16 @@
 - [Scifi button](https://sketchfab.com/3d-models/scifi-button-8dcd82d477e441d7b6789f1851924b5f) by lorib2306
 - [Basket of oranges](https://sketchfab.com/3d-models/basket-of-oranges-b9c654a534e1436ebabb541042bf5fe8) by Massimiliano Castiglione
 - [Easel](https://sketchfab.com/3d-models/easel-easel-with-painting-449501e5ac704151b2f913649617dc7c) by Every 3D
+- [Iron chain](https://sketchfab.com/3d-models/iron-chain-6d079f01c7c142e0be54d7f2d33b33e6) by dabori
+- [Abstract pattern](https://www.freepik.com/free-vector/abstract-pattern-design_1003182.htm) by borjandreu
+- [Forest in a jar](https://sketchfab.com/3d-models/forest-in-a-jar-terrarium-4dca1b2513394d0fa0ed12041ff30ddc) by hectopod
+- [Jumping spider](https://sketchfab.com/3d-models/jumping-spider-habronattus-coecatus-81bce2e378c6484e944432af39648c67) by Living Library 3D
+- [Tresspass sign](https://sketchfab.com/3d-models/railway-tresspass-sign-texture-study-dd04a8746b0a4e8db2dbfb83fc2ea497) by Jack Kelly
+- [Post it notes](https://sketchfab.com/3d-models/post-it-notes-87228ac82cef41ddb838ffb245c62688) by Sousinho
+- [Pin](https://sketchfab.com/3d-models/cc0-pin-2-4e7f37bee0674d569f558b0f08b7fdb7) by plaggy
+- [Fluorescent light](https://sketchfab.com/3d-models/fluorescent-light-ii-d0b108c17a2a4e2894bc90b91e72e150) by Alex R. Martinez
+- [External light](https://sketchfab.com/3d-models/external-light-c26e20eb514747e39413eae35e4b2c88) by Francesco Coldesina
+- [City ambience](https://freesound.org/people/leonelmail/sounds/427841/) by leonelmail
+- [Marker font](https://www.1001fonts.com/permanent-marker-font.html) by Font Diner
+- Many materials and models from [Poly Haven](https://polyhaven.com/)
+

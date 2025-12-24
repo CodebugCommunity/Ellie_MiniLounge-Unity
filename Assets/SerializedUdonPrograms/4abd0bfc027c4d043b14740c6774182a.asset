@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedProgramCompressedBytes: 1f8b080000000000000ad3030042e2d40e01000000
   serializedProgramBytesString: 
-  serializedSignature: f5574a02f4ee4ad0f720e9a4c0d92734ca920c0531874c928adec40f295fa2bb679b9fee288dcf4596ec36e87fc5d7321e75bd02e34b450fc936f27e148ba101
+  serializedSignature: 48359659de73220a880fea941cd40444393f58f472140b553c5aa30dfc8824d25347e6672e6abddd23a928a4da6390687f05c8df45585acc7cd1008358d37e04
   programUnityEngineObjects: []
   serializationDataFormat: 0
