@@ -1,16 +1,29 @@
 ## Contributors
-
-- Dreyns - Blender
+- Dreyns - World and most other assets, codebug and 
+   human codebug avatars
 - fb22 - Unity, lighting
+, VRChat integrations
 - Gunpowder77 - Audio mechanics
-- Kazlo - Architecture
+- Kazlo - Architecture concepts
 
-## Assets
-
-- Dreyns - World and all other assets, codebug avatar
-- RettiSeti - Interdisciplinary idiot sign and Pocket anvil sign model
-- Sunny-chan - Codebug rug art
+## Assets and art
+- RettiSeti - Interdisciplinary idiot an Pocket anvil 
+  sign models and technical drawings
+- timC2345 - Pixel Ellie and Emollie models
+- CandyQueenSunny - Codebug rug and 
+   50k celebration art
 - Xenogaeia - Codebug flag art
+- Master Yoba - Vitruvian Man Ellie art
+- mediocrity_insound - Cultist codebug art
+- Wholock - Codebug bean label
+- Book covers by Medmo, Nasze123, tokidokitoky, futuresightjoker, 
+  Kazlo and CandyQueenSunny
+- 7h0m4s - Transparent neurodog image
+- Many other codebugs in the Discord who gave us ideas, feedback 
+   and encouragement
+
+External assets, models, etc with links in Github repo: github.com/CodebugCommunity/Ellie_MiniLounge-Unity
+
 
 
 ## External projects/prefabs used:
@@ -65,6 +78,7 @@
 - [Pin](https://sketchfab.com/3d-models/cc0-pin-2-4e7f37bee0674d569f558b0f08b7fdb7) by plaggy
 - [Fluorescent light](https://sketchfab.com/3d-models/fluorescent-light-ii-d0b108c17a2a4e2894bc90b91e72e150) by Alex R. Martinez
 - [External light](https://sketchfab.com/3d-models/external-light-c26e20eb514747e39413eae35e4b2c88) by Francesco Coldesina
+- [3D printer](https://sketchfab.com/3d-models/metafactory-ender3-7bd2182f5fbd4b8980dcc02990818836)
 - [City ambience](https://freesound.org/people/leonelmail/sounds/427841/) by leonelmail
 - [Marker font](https://www.1001fonts.com/permanent-marker-font.html) by Font Diner
 - Many materials and models from [Poly Haven](https://polyhaven.com/)

@@ -64,11 +64,22 @@ public class FactorySwitch : UdonSharpBehaviour
 
     public Collider[] ObjectsToToggle;
 
+    public Collider[] additionalObjectsToToggle;
+
     public override void Interact()
     {
         state = !state;
         UpdateVisuals();
         foreach (Collider o in ObjectsToToggle)
+        {
+            if (o != null)
+            {
+                o.enabled = state;
+            }
+
+        }
+
+        foreach (Collider o in additionalObjectsToToggle)
         {
             if (o != null)
             {

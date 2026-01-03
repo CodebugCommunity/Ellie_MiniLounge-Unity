@@ -73,7 +73,7 @@ public class CodebugFeeder : UdonSharpBehaviour
         {
             codebug.SetDestination(transform.position);
         }
-        pelletParticles.Play();
+        
         timer = 8;
     }
 
@@ -90,6 +90,7 @@ public class CodebugFeeder : UdonSharpBehaviour
 
     public override void Interact()
     {
+        pelletParticles.Play();
         SendCustomNetworkEvent(NetworkEventTarget.Owner, nameof(CallCodebugs));
     }
     
