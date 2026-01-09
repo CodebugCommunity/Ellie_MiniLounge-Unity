@@ -337,6 +337,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: transparent_plastic
+    second: {fileID: 2100000, guid: ea609d3507e6e1140889774b61617843, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: world_base
     second: {fileID: 2100000, guid: 8607d387e1012344098ad6f99bb258d3, type: 2}
   - first:

@@ -77,6 +77,11 @@ public class CodebugFeeder : UdonSharpBehaviour
         timer = 8;
     }
 
+    public void PlayParticles()
+    {
+        pelletParticles.Play();
+    }
+
     public override void OnOwnershipTransferred(VRCPlayerApi newOwner)
     {
         if(Networking.IsOwner(Networking.LocalPlayer, gameObject))
@@ -90,8 +95,9 @@ public class CodebugFeeder : UdonSharpBehaviour
 
     public override void Interact()
     {
-        pelletParticles.Play();
+        
         SendCustomNetworkEvent(NetworkEventTarget.Owner, nameof(CallCodebugs));
+        SendCustomNetworkEvent(NetworkEventTarget.All, nameof(PlayParticles));
     }
     
     private void Update()
